@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFillChatQuoteFill, BsFillLaptopFill, BsFillPersonLinesFill, BsFillPieChartFill } from 'react-icons/bs';
+import { BsFillChatQuoteFill, BsFillPersonLinesFill, BsFillPieChartFill } from 'react-icons/bs';
 import { logo, menu, close } from "../assets";
 
 import { styles } from "../styles";
