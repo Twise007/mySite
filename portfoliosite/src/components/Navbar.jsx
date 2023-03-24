@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } w-full flex items-center py-5 fixed top-0 z-20 ${
+      } navbar w-full flex items-center py-5 sticky top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >
@@ -71,22 +71,19 @@ const Navbar = () => {
         </ul>
 
         <div className='md:hidden flex flex-1 justify-end items-center'>
-          <label htmlFor="my-drawer" >
-            <img
+        <img
               src={toggle ? close : menu}
               alt='menu'
               className='w-[28px] h-[28px] object-contain'
               onClick={() => setToggle(!toggle)}
-            />
-          </label>
+          />
           
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl drawer-side`}
+            } p-6 black-gradient absolute top-20 right-0 mx-1 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <label htmlFor="my-drawer" className="drawer-overlay"></label>
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 menu p-1 '>
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 menu  '>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
