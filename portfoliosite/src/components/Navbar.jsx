@@ -7,7 +7,7 @@ import { styles } from "../styles";
 
 const navLinks = [
   {title:'About',id:'about',icon:<BsFillPersonLinesFill/>},
-  {title:'Projects',id:'projects',icon:< BsFillPieChartFill/>},
+  {title:'Project',id:'project',icon:< BsFillPieChartFill/>},
   {title:'Testimonies',id:'testimonies',icon:< BsFillChatQuoteFill/>},
   {title:'Contact',id:'contact',icon:< BsFillChatQuoteFill/>},
   ]
@@ -36,7 +36,7 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } navbar w-full flex items-center py-5 sticky top-0 z-20 ${
+      } navbar w-full flex items-center py-5 fixed top-0 z-20 ${
         scrolled ? "bg-primary" : "bg-transparent"
       }`}
     >

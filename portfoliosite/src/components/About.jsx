@@ -7,7 +7,7 @@ import { services } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
-const ServiceCard = ({ index, title, icon }) => (
+const ServiceCard = ({ index, title, icon, text }) => (
   <Tilt className='xs:w-[250px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
@@ -19,17 +19,21 @@ const ServiceCard = ({ index, title, icon }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary rounded-[20px] py-5 px-12 min-h-[280px] flex justify-evenly items-center flex-col'
+        className='bg-tertiary card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col'
       >
+        <figure>
         <img
           src={icon}
           alt='web-development'
           className='w-16 h-16 object-contain'
         />
-
-        <h3 className='text-white text-[20px] font-bold text-center'>
+        </figure>
+      <div className="card-body pt-2">
+        <h3 className='card-title text-white text-[20px] font-bold items-center text-center'>
           {title}
         </h3>
+        <p className="h-6 w-auto overflow-y-auto">{text}</p>
+      </div>
       </div>
     </motion.div>
   </Tilt>
@@ -39,22 +43,28 @@ const About = () => {
   return (
     <>
       <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <p className={`${styles.sectionSubText} text-center`}>Introduction</p>
+        <h2 className={`${styles.sectionHeadText} text-center`}>Overview.</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
+        className='mt-4 text-secondary text-[17px] hero leading-[30px] justify-center'
       >
-        I'm a skilled software developer with experience in TypeScript and
-        JavaScript, and expertise in frameworks like React, Node.js, and
-        Three.js. I'm a quick learner and collaborate closely with clients to
-        create efficient, scalable, and user-friendly solutions that solve
-        real-world problems. Let's work together to bring your ideas to life!
+            A MERN stack developer that proffer professional, efficient,
+            and effecftive design service for Start-Up and Cooperate companies 
+            in maximazing there vision, there mission and there pontentials.
+            Proficient in multiple programming languages, including JavaScript, HTML, CSS, 
+            and MERN stack; and strong understanding of web development concepts such as responsive design and cross-browser compatibility.
+            I'm also a productive nerd, resilient and goal oriented person.
+            Tech as always been a passion for me, IOT and AI are my future ambition.<br/>
+            I had a significant years of expreince as a Network engineer and being 
+            certified by Cisco, web gave me the ability to explore and create my own world. 
+            I enjoy making research, solving problems, taking a 
+            lead, and watching football or playing football.
       </motion.p>
 
-      <div className='mt-20 flex flex-wrap gap-10'>
+      <div className='mt-10 flex flex-wrap gap-10 items-center justify-center'>
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

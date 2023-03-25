@@ -15,13 +15,6 @@ import {
   git,
   figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
   threejs,
 } from "../assets";
 
@@ -44,18 +37,22 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
-  },
-  {
-    title: "React Native Developer",
-    icon: mobile,
+    text: "I am very efficient and effective in HTML, CSS, SCSS, JS, REACTJS in building a beautiful user expreience.",
   },
   {
     title: "Backend Developer",
     icon: backend,
+    text: "I am very efficient and effective in NODE JS, EXPRESS JS, MONDO DB in building a stressless technology for the users.",
   },
   {
-    title: "Content Creator",
+    title: "Ui-Ux",
+    icon: mobile,
+    text: "Being a full stack engineer the knowledge of UI tools should never be over emphasis. I have some knowledge in ABODE XD and FIGMA.",
+  },
+  {
+    title: "Network Engineer",
     icon: creator,
+    text: "With over 5 years of exprience as a network engineer, in designing, troubleshooting and maintaining network facilities.",
   },
 ];
 
@@ -114,152 +111,49 @@ const technologies = [
   },
 ];
 
-const experiences = [
-  {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
-    iconBg: "#383E56",
-    date: "March 2020 - April 2021",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
-    iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-];
-
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
-
 const projects = [
-  {
-    name: "Car Rent",
-    description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: carrent,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Job IT",
-    description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-    tags: [
-      {
-        name: "react",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "restapi",
-        color: "green-text-gradient",
-      },
-      {
-        name: "scss",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: jobit,
-    source_code_link: "https://github.com/",
-  },
-  {
-    name: "Trip Guide",
-    description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-    tags: [
-      {
-        name: "nextjs",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "supabase",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-    ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
-  },
-];
+    {id: '1', imageName: 'enventory.png', visit:'https://enventory-app.vercel.app/', 
+    desc:'Built a CRUB app to help users record and manage stock of products, establishing navigation. Used MERN stack, Tailwind CSS, and Redux for state management.', 
+    title:'Enventory App', link:'https://github.com/Twise007/Enventory_app'},
+    {id: '2', imageName: 'project1.png', visit:'', 
+    desc:'Developed and hosted a website to showcase my skills and projects with React JS.', 
+    title:'Portfolio website', link:'https://github.com/Twise007/myPortfolio'},
+    {id: '3', imageName: 'taskManager.png', visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
+    desc:'A full-stack resource management web app built using MERN stack to enable users track and manage tasks', title:'Task Manager'},
+    {id: '4', imageName: 'img4.jpg', visit:'https://hogchurch.netlify.app/', link:"https://github.com/Twise007/churchWebsite",
+    desc:'Designed and developed a church website with an interactive homepage using React, validated web links and navigation, and optimized screens for mobile', 
+    title:'Church Website'},
+    {id: '5', imageName: 'weather.jpg', visit:'https://tee-o-weather.netlify.app/', 
+    desc:'Built an app to fetch data and report on current weather status, implementing features for real-time updates using React and Bootstrap', title:'Weather App', link:'https://github.com/'},
+    {id: '6', imageName: 'img2.jpg', visit:'https://tee-o-todo.netlify.app/', 
+    desc:'Developed a simple web app that allows users to add and delete to-do items; used JS, HTML, and CSS.', title:'Todo-App', link:'https://github.com/'},
+  ];
 
-export { services, technologies, experiences, testimonials, projects };
+  const testimonials = [
+    {
+      testimonial:
+        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+      name: "Sara Lee",
+      designation: "CFO",
+      company: "Acme Co",
+      image: "https://randomuser.me/api/portraits/women/4.jpg",
+    },
+    {
+      testimonial:
+        "I've never met a web developer who truly cares about their clients' success like Rick does.",
+      name: "Chris Brown",
+      designation: "COO",
+      company: "DEF Corp",
+      image: "https://randomuser.me/api/portraits/men/5.jpg",
+    },
+    {
+      testimonial:
+        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+      name: "Lisa Wang",
+      designation: "CTO",
+      company: "456 Enterprises",
+      image: "https://randomuser.me/api/portraits/women/6.jpg",
+    },
+  ];
+
+export { services, technologies, testimonials, projects };
