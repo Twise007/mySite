@@ -28,19 +28,20 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
         </div>
       }
     >
-        <div className='relative w-full h-[300px] cursor-pointer' style={{overflow:"hidden", objectFit:""}} onClick={() => window.open(visit, "_blank")}>
+        <div className='relative w-full h-[300px] cursor-pointer  black-gradient opacity-70 hover:opacity-100 transition-opacity' onClick={() => window.open(visit, "_blank")}>
           <img
             src={imageName}
             alt='project_Image'
             className='absolute inset-0 w-full h-full object-cover rounded-xl hover:scale-125 transition:transform '
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-0 hover:opacity-100 transition-opacity"></div>
-          <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
+          <div className="absolute inset-0"></div>
+          
+          <div className='absolute inset-0 flex justify-end m-3'>
             <div
               onClick={() => window.open(link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer'
+              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'
             >
-              <BsGithub className='text-2xl' />
+              <BsGithub className='text-2xl hover:text-3xl duration-500' />
             </div>
           </div>
         </div>

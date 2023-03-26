@@ -14,6 +14,8 @@ import taskManager from "./taskManager.png";
 import weather from "./weather.png";
 import hog from "./hog.png";
 import todo from "./todo.png";
+import profile from "./profile.png";
+import myCv from "./myCv.pdf";
 
 
 
@@ -41,6 +43,8 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  profile,
+  myCv,
   hog,
   todo,
   femi,

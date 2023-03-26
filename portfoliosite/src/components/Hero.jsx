@@ -1,14 +1,15 @@
 import { motion } from "framer-motion"
 import { Typewriter } from 'react-simple-typewriter'
+import { BsCloudDownloadFill } from 'react-icons/bs'
 
 import { styles } from "../styles"
-import ProfilePicture  from "../assets/profile.png";
+import { myCv, profile } from "../assets";
 
 const Hero = () => {
   return (
     <div className="relative hero min-h-screen  lg:pt-0 pt-14">
     <div className="hero-content flex-col lg:flex-row ">
-      <img src={ProfilePicture} alt='profile' className="w-full max-w-sm rounded-lg shadow-2xl"/>
+      <img src={profile} alt='profile' className="w-full max-w-sm rounded-lg shadow-2xl"/>
       <div className={`inset-0 top-[120px]  max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-[#915EFF]' />
@@ -29,16 +30,35 @@ const Hero = () => {
                   delaySpeed={1500}
                   words={['Web designer', 'Web developer', 'Network Engineer']}
                 />
-            </h2>
+          </h2>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
             Turning ideas into real life <br className='sm:block hidden' />
              profit making product in the digital world.
           </p>
+          <div className=' w-full flex justify-start items-center mt-2'>
+        <a href={myCv} download="Tunde Oke Cv.pdf">
+          <div className='w-full h-[46px] rounded-3xl border-4 border-[#dfd9ff] flex justify-center items-center p-2 hover:text-white hover:border-white'>
+            <motion.div
+              animate={{
+                y: [0, 12, 0],
+              }}
+              transition={{
+                duration: 1.5,
+                repeat: Infinity,
+                repeatType: "loop",
+              }}
+            />
+            <BsCloudDownloadFill/>
+            <p className={`ml-2`}>Download CV</p>
+          </div>
+        </a>
+      </div>
         </div>
+        
       </div>
     </div>
 
-      <div className='absolute xs:bottom-10 bottom-22 w-full flex justify-center items-center'>
+      {/* <div className='absolute xs:bottom-10 bottom-22 w-full flex justify-center items-center'>
         <a href='#about'>
           <div className='w-[35px] h-[64px] rounded-3xl border-4 border-[#dfd9ff] flex justify-center items-start p-2'>
             <motion.div
@@ -54,7 +74,7 @@ const Hero = () => {
             />
           </div>
         </a>
-      </div>
+      </div> */}
     </div>
   )
 }
