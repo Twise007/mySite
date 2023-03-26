@@ -28,12 +28,13 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
         </div>
       }
     >
-        <div className='relative w-full h-[300px] cursor-pointer' onClick={() => window.open(visit, "_blank")}>
+        <div className='relative w-full h-[300px] cursor-pointer' style={{overflow:"hidden", objectFit:""}} onClick={() => window.open(visit, "_blank")}>
           <img
             src={imageName}
             alt='project_Image'
-            className='w-full h-[100%] object-fill rounded-xl'
+            className='absolute inset-0 w-full h-full object-cover rounded-xl hover:scale-125 transition:transform '
           />
+          <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-black opacity-0 hover:opacity-100 transition-opacity"></div>
           <div className='absolute inset-0 flex justify-end m-3 card-img_hover'>
             <div
               onClick={() => window.open(link, "_blank")}
