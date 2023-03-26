@@ -6,6 +6,14 @@ import web from "./web.png";
 import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
+import enventory from "./enventory.png";
+import femi from "./femi.png";
+import isreal from "./isreal.png";
+import samuel from "./samuel.png";
+import taskManager from "./taskManager.png";
+import weather from "./weather.png";
+import hog from "./hog.png";
+import todo from "./todo.png";
 
 
 
@@ -33,6 +41,14 @@ import jobit from "./jobit.png";
 import tripguide from "./tripguide.png";
 
 export {
+  hog,
+  todo,
+  femi,
+  isreal,
+  samuel,
+  enventory,
+  weather,
+  taskManager,
   logo,
   backend,
   creator,

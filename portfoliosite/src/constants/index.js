@@ -1,4 +1,12 @@
 import {
+  hog,
+  todo,
+  femi,
+  isreal,
+  samuel,
+  enventory,
+  weather,
+  taskManager,
   mobile,
   backend,
   creator,
@@ -112,20 +120,20 @@ const technologies = [
 ];
 
 const projects = [
-    {id: '1', imageName: 'enventory.png', visit:'https://enventory-app.vercel.app/', 
+    {id: '1', imageName:enventory, visit:'https://enventory-app.vercel.app/', 
     desc:'Built a CRUB app to help users record and manage stock of products, establishing navigation. Used MERN stack, Tailwind CSS, and Redux for state management.', 
     title:'Enventory App', link:'https://github.com/Twise007/Enventory_app'},
     {id: '2', imageName: 'project1.png', visit:'', 
     desc:'Developed and hosted a website to showcase my skills and projects with React JS.', 
     title:'Portfolio website', link:'https://github.com/Twise007/myPortfolio'},
-    {id: '3', imageName: 'taskManager.png', visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
+    {id: '3', imageName: taskManager, visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
     desc:'A full-stack resource management web app built using MERN stack to enable users track and manage tasks', title:'Task Manager'},
-    {id: '4', imageName: 'img4.jpg', visit:'https://hogchurch.netlify.app/', link:"https://github.com/Twise007/churchWebsite",
+    {id: '4', imageName: hog, visit:'https://hogchurch.netlify.app/', link:"https://github.com/Twise007/churchWebsite",
     desc:'Designed and developed a church website with an interactive homepage using React, validated web links and navigation, and optimized screens for mobile', 
     title:'Church Website'},
-    {id: '5', imageName: 'weather.jpg', visit:'https://tee-o-weather.netlify.app/', 
+    {id: '5', imageName: weather, visit:'https://tee-o-weather.netlify.app/', 
     desc:'Built an app to fetch data and report on current weather status, implementing features for real-time updates using React and Bootstrap', title:'Weather App', link:'https://github.com/'},
-    {id: '6', imageName: 'img2.jpg', visit:'https://tee-o-todo.netlify.app/', 
+    {id: '6', imageName: todo, visit:'https://tee-o-todo.netlify.app/', 
     desc:'Developed a simple web app that allows users to add and delete to-do items; used JS, HTML, and CSS.', title:'Todo-App', link:'https://github.com/'},
   ];
 
