@@ -37,7 +37,7 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } navbar w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-primary" : "bg-transparent"
+        scrolled ? "bg-bg-primary" : "bg-transparent"
       }`}
     >
       <div className='w-full flex justify-between items-center max-w-7xl mx-auto'>
@@ -49,8 +49,8 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt='logo' className='w-9 h-9 object-contain' />
-          <p className='text-white text-[18px] font-bold cursor-pointer flex '>
+          <img src={logo} alt='logo' className='w-9 h-9 object-contain'/>
+          <p className='text-bg-white text-[18px] font-bold cursor-pointer flex'>
             TeeTech &nbsp;
             <span className='sm:block hidden'> | Portfolio</span>
           </p>
@@ -61,8 +61,8 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-[#00c6bf]" : "text-secondary"
-              } hover:text-white text-[18px] font-medium cursor-pointer`}
+                active === nav.title ? "text-bg-btn" : "text-bg-hoverT"
+              } hover:text-bg-btn text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -81,14 +81,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } p-6 black-gradient absolute top-20 right-0 mx-1 my-2 min-w-[140px] z-10 rounded-xl`}
+            } p-6 absolute top-20 right-0 mx-1 my-2 min-w-[140px] z-10 rounded-xl`}
           >
-            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 menu  '>
+            <ul className='list-none flex justify-end items-start flex-1 flex-col gap-4 menu'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`font-poppins font-medium cursor-pointer text-[16px] ${
-                    active === nav.title ? "text-white" : "text-secondary"
+                    active === nav.title ? "text-bg-white" : "text-bg-hoverT"
                   }`}
                   onClick={() => {
                     setToggle(!toggle);

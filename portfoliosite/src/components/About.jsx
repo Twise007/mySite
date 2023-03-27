@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-tertiary card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col'
+        className='bg-bg-sec card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col'
       >
         <figure>
         <img
@@ -29,10 +29,10 @@ const ServiceCard = ({ index, title, icon, text }) => (
         />
         </figure>
       <div className="card-body pt-2">
-        <h3 className='card-title text-white text-[20px] font-bold items-center text-center'>
+        <h3 className='card-title text-bg-btn text-[20px] font-bold items-center text-center'>
           {title}
         </h3>
-        <p className="h-6 w-auto overflow-y-auto">{text}</p>
+        <p className="h-6 w-auto overflow-y-auto text-bg-white">{text}</p>
       </div>
       </div>
     </motion.div>
@@ -49,7 +49,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] hero leading-[30px] justify-center'
+        className='mt-4 text-bg-white text-[17px] hero leading-[30px] justify-center'
       >
             A MERN stack developer that proffer professional, efficient,
             and effecftive design service for Start-Up and Cooperate companies 

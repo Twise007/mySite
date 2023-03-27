@@ -1,4 +1,5 @@
 import React from "react";
+import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
@@ -14,22 +15,19 @@ const TestimoniesCard = ({
   company,
   image,
 }) => (
+  <Tilt>
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 1)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='transCard shadow-2xl p-5 rounded-3xl xs:w-[320px] w-full'
   >
-    <p className='text-white font-black text-[48px]'>"</p>
-
-    <div className='mt-1'>
-      <p className='text-white tracking-wider text-[18px]'>{testimonial}</p>
-
-      <div className='mt-7 flex justify-between items-center gap-1'>
+    <p className='text-bg-white font-black text-[48px]'>"</p>
+    <div className=''>
+      <p className='h-[11pc] w-auto overflow-y-auto text-bg-white tracking-wider text-[18px]'>{testimonial}</p>
+      <div className='flex justify-between items-center gap-1 mt-3'>
         <div className='flex-1 flex flex-col'>
-          <p className='text-white font-medium text-[16px]'>
-            <span className='blue-text-gradient'>@</span> {name}
-          </p>
-          <p className='mt-1 text-secondary text-[12px]'>
-            {designation} of {company}
+          <p className='text-white font-medium text-[16px]'>@ {name}</p>
+          <p className='mt-1 text-bg-btn text-[12px]'>
+            {designation} of <span className="text-[14px]"> {company}</span>
           </p>
         </div>
 
@@ -41,13 +39,14 @@ const TestimoniesCard = ({
       </div>
     </div>
   </motion.div>
+  </Tilt>
 );
 
 const Testimonies = () => {
   return (
-    <div className={`mt-12 bg-black-100 rounded-[20px]`}>
+    <div className={`mt-12  rounded-[20px] transCard`}>
       <div
-        className={`bg-tertiary rounded-2xl ${styles.padding} min-h-[300px]`}
+        className={`bg-bg-sec rounded-2xl ${styles.padding} min-h-[300px]`}
       >
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say me</p>

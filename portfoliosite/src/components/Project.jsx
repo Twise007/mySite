@@ -1,7 +1,6 @@
 import React from "react";
 import { VerticalTimeline,VerticalTimelineElement, } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { motion } from "framer-motion";
 import { BsGlobe, BsGithub } from 'react-icons/bs'
 import { styles } from "../styles";
 import { projects } from "../constants";
@@ -12,22 +11,22 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
   return (
     <VerticalTimelineElement
       contentStyle={{
-        background: "#1d1836",
-        color: "#fff",
+        background: "var(--color-sec)",
+        color: "var(--color-white)",
       }}
-      contentArrowStyle={{ borderRight: "7px solid  #232631" }}
+      contentArrowStyle={{borderRight: "7px solid var(--color-sec)"}}
       date={
-        <div className={`${styles.sectionSubText} `}>
+        <div className={`${styles.sectionSubText} text-[var(--color-btn)]`}>
             {title}
         </div>}
-      iconStyle={{background:'#000'}}
+      iconStyle={{background:'var(--color-primary)'}}
       icon={
-        <div className='justify-center items-center w-full h-full text-white'>
+        <div className='justify-center items-center w-full h-full text-bg-white'>
           <BsGlobe className='text-3xl'/>
         </div>
       }
     >
-        <div className='relative w-full h-[300px] cursor-pointer  black-gradient opacity-70 hover:opacity-100 transition-opacity' onClick={() => window.open(visit, "_blank")}>
+        <div className='relative w-full h-[300px] cursor-pointer opacity-70 hover:opacity-100 transition-opacity' onClick={() => window.open(visit, "_blank")}>
           <img
             src={imageName}
             alt='project_Image'
@@ -38,9 +37,9 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
           <div className='absolute inset-0 flex justify-end m-3'>
             <div
               onClick={() => window.open(link, "_blank")}
-              className='black-gradient w-10 h-10 rounded-full flex justify-center items-center'
+              className='bg-black w-10 h-10 rounded-full flex justify-center items-center'
             >
-              <BsGithub className='text-2xl hover:text-3xl duration-500' />
+              <BsGithub className='text-2xl hover:text-3xl duration-500 text-white' />
             </div>
           </div>
         </div>
