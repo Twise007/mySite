@@ -6,7 +6,6 @@ import { BsGlobe, BsGithub } from 'react-icons/bs'
 import { styles } from "../styles";
 import { projects } from "../constants";
 import { SectionWrapper } from "../hoc";
-import { textVariant } from "../utils/motion";
 
 
 const ProjectCard = ({ desc, imageName, link, visit, title }) => {

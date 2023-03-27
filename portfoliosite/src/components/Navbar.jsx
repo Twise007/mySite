@@ -7,9 +7,9 @@ import { styles } from "../styles";
 
 const navLinks = [
   {title:'About',id:'about',icon:<BsFillPersonLinesFill/>},
-  {title:'Project',id:'project',icon:< BsFillPieChartFill/>},
-  {title:'Testimonies',id:'testimonies',icon:< BsFillChatQuoteFill/>},
-  {title:'Contact',id:'contact',icon:< BsFillChatQuoteFill/>},
+  {title:'Project',id:'project',icon:<BsFillPieChartFill/>},
+  {title:'Testimonies',id:'testimonies',icon:<BsFillChatQuoteFill/>},
+  {title:'Contact',id:'contact',icon:<BsFillChatQuoteFill/>},
   ]
 
 const Navbar = () => {
@@ -61,7 +61,7 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-white" : "text-secondary"
+                active === nav.title ? "text-[#00c6bf]" : "text-secondary"
               } hover:text-white text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
