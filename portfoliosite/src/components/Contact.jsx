@@ -33,8 +33,8 @@ const Contact = () => {
 
     emailjs
       .send(
-        import.meta.env.EMAILJS_SERVICE_ID,
-        import.meta.env.EMAILJS_TEMPLATE_ID,
+        'service_vuig1ws',
+       'template_adi78l2', 
         {
           from_name: form.name,
           to_name: "Tunde Oke",
@@ -42,12 +42,12 @@ const Contact = () => {
           to_email: "tundeoke80@gmail.com",
           message: form.message,
         },
-        import.meta.env.EMAILJS_PUBLIC_KEY
+        '6MLX4o61sRGCZz9F0'
       )
       .then(
         () => {
           setLoading(false);
-          alert("Thank you. I will get back to you as soon as possible.");
+          toast("Thank you. I will get back to you as soon as possible.");
 
           setForm({
             name: "",
@@ -58,7 +58,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-          alert("Ahh, something went wrong. Please try again.");
+          toast("Ahh, something went wrong. Please try again.");
         }
       );
   };
@@ -86,6 +86,7 @@ const Contact = () => {
               name='name'
               value={form.name}
               onChange={handleChange}
+              required
               placeholder="What's your good name?"
               className='transCard py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none border-none'
             />
@@ -97,6 +98,7 @@ const Contact = () => {
               name='email'
               value={form.email}
               onChange={handleChange}
+              required
               placeholder="What's your web address?"
               className='transCard py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none border-none'
             />
