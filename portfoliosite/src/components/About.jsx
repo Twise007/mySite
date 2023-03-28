@@ -8,7 +8,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
 const ServiceCard = ({ index, title, icon, text }) => (
-  <Tilt className='xs:w-[250px] w-full'>
+  <Tilt className='xs:w-[260px] w-full'>
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className='w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card'
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
           scale: 1,
           speed: 450,
         }}
-        className='bg-bg-sec card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col'
+        className='bg-bg-sec card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col justify-center'
       >
         <figure>
         <img
@@ -29,7 +29,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
         />
         </figure>
       <div className="card-body pt-2">
-        <h3 className='card-title text-bg-btn text-[20px] font-bold items-center text-center'>
+        <h3 className='card-title text-bg-btn text-[20px] font-bold items-center text-center justify-center'>
           {title}
         </h3>
         <p className="h-6 w-auto overflow-y-auto text-bg-white">{text}</p>
