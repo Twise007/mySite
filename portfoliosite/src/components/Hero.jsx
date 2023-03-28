@@ -9,7 +9,7 @@ const Hero = () => {
   return (
     <div className="relative hero min-h-screen lg:pt-0 pt-14">
     <div className="hero-content flex-col lg:flex-row ">
-      <img src={profile} alt='profile' className="w-full max-w-sm rounded-lg shadow-2xl"/>
+      <img src={profile} alt='profile' className="w-full max-w-sm rounded-lg shadow-2xl" style={{borderRadius:"63% 37% 62% 38% / 34% 31% 69% 66% "}}/>
       <div className={`inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start`}>
         <div className='flex flex-col justify-center items-center mt-5'>
           <div className='w-5 h-5 rounded-full bg-bg-btn' />
