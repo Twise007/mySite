@@ -1,14 +1,15 @@
-import React, { useRef, useState } from "react";
-import { motion } from "framer-motion";
-import emailjs from "@emailjs/browser";
-import { toast } from 'react-toastify'
-import { contact } from "../assets";
+ import React, { useRef, useState } from "react";
+ import { motion } from "framer-motion";
+ import emailjs from "@emailjs/browser";
+ import { toast } from 'react-toastify'
+ import { contact } from "../assets";
 
-import { styles } from "../styles";
-import { SectionWrapper } from "../hoc";
-import { slideIn } from "../utils/motion";
+ import { styles } from "../styles";
+ import { SectionWrapper } from "../hoc";
+ import { slideIn } from "../utils/motion";
+import Social from "./Social";
 
-const Contact = () => {
+ const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
     name: "",
@@ -64,21 +65,22 @@ const Contact = () => {
       );
   };
 
-  return (
-    <div
-      className={`xl:mt-12 flex l:flex-row flex-col-reverse gap-6 overflow-hidden transCard bg-bg-sec bg-bg-btn rounded-2xl`}
-    >
-      <motion.div
+   return (
+     <div
+       className={`xl:mt-12 flex l:flex-row flex-col-reverse gap-6 overflow-hidden transCard bg-bg-sec bg-bg-btn rounded-2xl`}
+   >
+       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className='flex-[0.75] bg-bg-sec p-8 rounded-2xl'
       >
-        <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
-
+        <p className={styles.sectionSubText}>Get in touch to me</p>
+        <h3 className={styles.sectionHeadText}>Contact</h3>
+        <Social />
+        <p className='text-bg-white font-black text-[48px] text-center py-4'>OR</p>
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='mt-12 flex flex-col gap-8 text-bg-white font-medium'
+          className='flex flex-col gap-8 text-bg-white font-medium'
         >
           <label className='flex flex-col'>
             <span className=' mb-4'>Your Name</span>
@@ -118,24 +120,26 @@ const Contact = () => {
 
           <button
             type='submit'
-            className='bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary'
+            className='bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn'
           >
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div>
+      </motion.div> 
 
-      <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className=' '
-      >
-        <div className="items-center hero justify-center md:bg-[red] mt-6">
-          <img src={contact} alt="svg"  className="max-w-sm rounded-full shadow-2xl"/>
-        </div>
-      </motion.div>
-      <Contact/>
-    </div>
-  );
-};
+       <motion.div
+         variants={slideIn("right", "tween", 0.2, 1)}
+         className=' '
+       >
+         <div className="items-center hero justify-center md:bg-[red] mt-6">
+           <img src={contact} alt="svg"  className="max-w-sm rounded-full shadow-2xl"/>
+         </div>
+       </motion.div>
 
-export default SectionWrapper(Contact, "contact");
+     </div>
+   );
+ };
+
+ export default SectionWrapper(Contact, "contact");
+
+
