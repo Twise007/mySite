@@ -2,6 +2,7 @@ import React, { useRef, useState } from "react";
 import { motion } from "framer-motion";
 import emailjs from "@emailjs/browser";
 import { toast } from 'react-toastify'
+import { contact } from "../assets";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -65,7 +66,7 @@ const Contact = () => {
 
   return (
     <div
-      className={`xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden transCard rounded-2xl`}
+      className={`xl:mt-12 flex l:flex-row flex-col-reverse gap-6 overflow-hidden transCard bg-bg-sec bg-bg-btn rounded-2xl`}
     >
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -126,9 +127,13 @@ const Contact = () => {
 
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
-        className='xl:flex-1 xl:h-auto md:h-[550px] h-[350px]'
+        className=' '
       >
+        <div className="items-center hero justify-center md:bg-[red] mt-6">
+          <img src={contact} alt="svg"  className="max-w-sm rounded-full shadow-2xl"/>
+        </div>
       </motion.div>
+      <Contact/>
     </div>
   );
 };

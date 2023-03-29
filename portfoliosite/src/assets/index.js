@@ -16,6 +16,7 @@ import hog from "./hog.png";
 import todo from "./todo.png";
 import profile from "./profile.png";
 import myCv from "./myCv.pdf";
+import contact from "./contact.svg";
 
 
 
@@ -33,6 +34,7 @@ import tailwind from "./tech/tailwind.png";
 import tripguide from "./tripguide.png";
 
 export {
+  contact,
   profile,
   myCv,
   hog,
