@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { BsFillChatQuoteFill, BsFillPersonLinesFill, BsFillPieChartFill } from 'react-icons/bs';
+import { BsFillChatQuoteFill, BsFillPersonLinesFill, BsFillPieChartFill, BsPersonVcard } from 'react-icons/bs';
 import { logo, menu, close } from "../assets";
 
 import { styles } from "../styles";
@@ -9,7 +9,7 @@ const navLinks = [
   {title:'About',id:'about',icon:<BsFillPersonLinesFill/>},
   {title:'Project',id:'project',icon:<BsFillPieChartFill/>},
   {title:'Testimonies',id:'testimonies',icon:<BsFillChatQuoteFill/>},
-  {title:'Contact',id:'contact',icon:<BsFillChatQuoteFill/>},
+  {title:'Contact',id:'contact',icon:<BsPersonVcard/>},
   ]
 
 const Navbar = () => {
@@ -87,7 +87,7 @@ const Navbar = () => {
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] hover:text-bg-btn w-full ${
+                  className={`w-[11pc] font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] hover:text-bg-btn w-full ${
                     active === nav.title ? "text-bg-btn" : "text-bg-hoverT"
                   }`}
                   onClick={() => {
@@ -95,7 +95,7 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a className="rounded-md" href={`#${nav.id}`}><span className="text-[26px]">{nav.icon}</span>{nav.title}</a>
+                  <a className="rounded-md duration-300" href={`#${nav.id}`}><span className="text-[26px] text-bg-btn">{nav.icon}</span>{nav.title}</a>
                 </li>
               ))}
             </ul>

@@ -20,7 +20,7 @@ const Social = () => {
         key={index}
         onClick={() => window.open(data.link, "_blank")}
         className='transCard w-12 h-12 hover:w-14 hover:h-14 rounded-full flex justify-center items-center cursor-pointer
-        text-2xl hover:text-3xl duration-300 text-white hover:text-bg-btn'
+        text-2xl hover:text-3xl duration-700 text-hoverT hover:text-bg-btn hover:bg-bg-hoverT'
       >
         <li>{data.icon}</li>
       </div> 

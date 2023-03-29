@@ -75,7 +75,7 @@ import Social from "./Social";
       >
         <p className={styles.sectionSubText}>Get in touch to me</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
-        <Social />
+        <div className="hero md:justify-start"><Social /></div>
         <p className='text-bg-white font-black text-[48px] text-center py-4'>OR</p>
         <form
           ref={formRef}
