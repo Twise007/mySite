@@ -14,7 +14,7 @@ const datas =[
 const Social = () => {
   return (
     <div className='pt-2'>
-      <ul className='list-none flex flex-row gap-1 justify-start items-center'>
+      <ul className='list-none flex flex-row gap-2 justify-start items-center h-16'>
       {datas.map((data, index) => 
         <div
         key={index}
