@@ -81,13 +81,13 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen transCard`}
+            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen transCard shadow-2xl`}
           >
             <ul className='list-none flex justify-start flex-1 flex-col gap-4 menu'>
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`w-[11pc] font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] hover:text-bg-btn w-full ${
+                  className={`w-[13pc] font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] hover:text-bg-btn w-full ${
                     active === nav.title ? "text-bg-btn" : "text-bg-hoverT"
                   }`}
                   onClick={() => {

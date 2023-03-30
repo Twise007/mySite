@@ -6,7 +6,7 @@
 
  import { styles } from "../styles";
  import { SectionWrapper } from "../hoc";
- import { slideIn } from "../utils/motion";
+ import { slideIn, textVariant } from "../utils/motion";
 import Social from "./Social";
 
  const Contact = () => {
@@ -66,21 +66,29 @@ import Social from "./Social";
   };
 
    return (
-     <div
-       className={`xl:mt-12 flex l:flex-row flex-col-reverse gap-6 overflow-hidden transCard bg-bg-sec bg-bg-btn rounded-2xl`}
-   >
-       <motion.div
-        variants={slideIn("left", "tween", 0.2, 1)}
-        className='flex-[0.75] bg-bg-sec p-8 rounded-2xl'
+    <div >
+      <div className={`rounded-2xl ${styles.padding} bg-bg-sec`}>
+        <motion.div variants={textVariant()}>
+            <p className={styles.sectionSubText}>Get in touch to me</p>
+          <h3 className={styles.sectionHeadText}>Contact</h3>
+          <div className="hero md:justify-start "><Social /></div>
+          <p className='text-bg-white font-black text-[48px] text-center'>OR</p>
+      </motion.div>
+      <div className="">
+      <div className="hero-content flex-col lg:flex-row-reverse bg-bg-btn transCard rounded-2xl ">
+      <motion.div
+        variants={slideIn("right", "tween", 0.2, 1)}
       >
-        <p className={styles.sectionSubText}>Get in touch to me</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
-        <div className="hero md:justify-start"><Social /></div>
-        <p className='text-bg-white font-black text-[48px] text-center py-4'>OR</p>
+        <img src={contact} className="max-w-sm h-[500px] w-auto object-cover" />
+      </motion.div>
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className='flex-[0.75] w-full rounded-2xl p-8'
+      >
         <form
           ref={formRef}
           onSubmit={handleSubmit}
-          className='flex flex-col gap-8 text-bg-white font-medium'
+          className='flex flex-col gap-8 text-bg-white font-medium align-items justify-center'
         >
           <label className='flex flex-col'>
             <span className=' mb-4'>Your Name</span>
@@ -120,13 +128,16 @@ import Social from "./Social";
 
           <button
             type='submit'
-            className='bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn'
+            className='bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn '
           >
             {loading ? "Sending..." : "Send"}
           </button>
         </form>
-      </motion.div> 
-
+      </motion.div>
+    </div>
+    </div>
+   </div>
+     {/* <div className={`flex-col lg:flex-row-reverse `}>
        <motion.div
          variants={slideIn("right", "tween", 0.2, 1)}
          className=' '
@@ -135,8 +146,8 @@ import Social from "./Social";
            <img src={contact} alt="svg"  className="max-w-sm rounded-full shadow-2xl"/>
          </div>
        </motion.div>
-
-     </div>
+     </div>      */}
+    </div>
    );
  };
 

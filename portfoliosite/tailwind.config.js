@@ -8,7 +8,7 @@ module.exports = {
         "bg-primary": "var(--color-primary)",
         "bg-btn": "var(--color-btn)",
         "bg-sec": "var(--color-sec)",
-        "bg-hoverT":"var(--color-hoverT)"
+        "bg-hoverT":"var(--color-hoverT)",
       },
       boxShadow: {
         card: "0px 35px 90px -25px #211e35",
