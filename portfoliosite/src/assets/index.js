@@ -15,8 +15,11 @@ import weather from "./weather.png";
 import hog from "./hog.png";
 import todo from "./todo.png";
 import profile from "./profile.png";
+import project1 from "./project1.png";
+import lms from "./lms.png";
 import myCv from "./myCv.pdf";
 import contact from "./contact.svg";
+import videoBg from "./videoBg.mp4";
 
 
 
@@ -34,6 +37,9 @@ import tailwind from "./tech/tailwind.png";
 import tripguide from "./tripguide.png";
 
 export {
+  lms,
+  project1,
+  videoBg,
   contact,
   profile,
   myCv,

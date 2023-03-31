@@ -8,8 +8,8 @@ import { myCv, profile } from "../assets";
 const Hero = () => {
   return (
     <div className="relative hero min-h-screen lg:pt-0 pt-14">
-    <div className="hero-content flex-col lg:flex-row ">
-      <img src={profile} alt='profile' className="shadow-2xl max-w-sm shadow-2xl" style={{borderRadius:"63% 37% 62% 38% / 34% 31% 69% 66% "}}/>
+    <div className="hero-content flex-col lg:flex-row">
+      <img src={profile} alt='profile' className="max-w-sm bg-opacity" style={{borderRadius:"63% 37% 62% 38% / 34% 31% 69% 66% "}}/>
       <div className={`inset-0 top-[120px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start`}>
         <div className='flex flex-col justify-center items-center mt-5 mr-1'>
           <div className='w-5 h-5 rounded-full bg-bg-btn' />
@@ -37,7 +37,7 @@ const Hero = () => {
           </p>
         <div className='w-full flex justify-start items-center mt-2 pb-12 text-bg-hoverT'>
         <a href={myCv} download="Tunde Oke Cv.pdf">
-          <div className='w-full h-[46px] rounded-3xl border-4 border-bg-hoverT flex justify-center items-center p-2 hover:text-bg-white hover:border-bg-white'>
+          <div className='w-full h-[46px] rounded-3xl border-4 border-bg-hoverT flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn'>
             <motion.div
               animate={{
                 y: [0, 12, 0],

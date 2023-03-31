@@ -33,10 +33,9 @@ import Social from "./Social";
     e.preventDefault();
     setLoading(true);
 
-    emailjs
-      .send(
-        'service_vuig1ws',
-       'template_adi78l2', 
+    emailjs.send(
+        process.env.REACT_APP_EMAILJS_SERVICE_ID,
+       process.env.REACT_APP_EMAILJS_TEMPLATE_ID, 
         {
           from_name: form.name,
           to_name: "Tunde Oke",
@@ -44,7 +43,7 @@ import Social from "./Social";
           to_email: "tundeoke80@gmail.com",
           message: form.message,
         },
-        '6MLX4o61sRGCZz9F0'
+        process.env.REACT_APP_EMAILJS_PUBLIC_KEY
       )
       .then(
         () => {
@@ -66,8 +65,7 @@ import Social from "./Social";
   };
 
    return (
-    <div >
-      <div className={`rounded-2xl ${styles.padding} bg-bg-sec`}>
+    <div className={`rounded-2xl ${styles.padding} bg-bg-sec`}>
         <motion.div variants={textVariant()}>
             <p className={styles.sectionSubText}>Get in touch to me</p>
           <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -79,7 +77,7 @@ import Social from "./Social";
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
       >
-        <img src={contact} className="max-w-sm h-[500px] w-auto object-cover" />
+        <img src={contact} alt='contact' className="max-w-sm h-[500px] w-auto object-cover" />
       </motion.div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
@@ -137,17 +135,6 @@ import Social from "./Social";
     </div>
     </div>
    </div>
-     {/* <div className={`flex-col lg:flex-row-reverse `}>
-       <motion.div
-         variants={slideIn("right", "tween", 0.2, 1)}
-         className=' '
-       >
-         <div className="items-center hero justify-center md:bg-[red] mt-6">
-           <img src={contact} alt="svg"  className="max-w-sm rounded-full shadow-2xl"/>
-         </div>
-       </motion.div>
-     </div>      */}
-    </div>
    );
  };
 

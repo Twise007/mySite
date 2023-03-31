@@ -21,6 +21,8 @@ import {
   mongodb,
   git,
   figma,
+  project1,
+  lms
 } from "../assets";
 
 
@@ -91,20 +93,23 @@ const technologies = [
 ];
 
 const projects = [
-    {id: '1', imageName:enventory, visit:'https://enventory-app.vercel.app/', 
+    {imageName:lms, visit:'https://teecamp.netlify.app/', 
+    desc:'Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to a teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Upload of profile picture with cloudinary', 
+    title:'Learning Management System', link:'https://github.com/Twise007/lms'},
+    {imageName:enventory, visit:'https://enventory-app.vercel.app/', 
     desc:'Built a CRUB app to help users record and manage stock of products, establishing navigation. Used MERN stack, Tailwind CSS, and Redux for state management.', 
     title:'Enventory App', link:'https://github.com/Twise007/Enventory_app'},
-    {id: '2', imageName: 'project1.png', visit:'', 
+    {imageName: project1, visit:'', 
     desc:'Developed and hosted a website to showcase my skills and projects with React JS.', 
-    title:'Portfolio website', link:'https://github.com/Twise007/myPortfolio'},
-    {id: '3', imageName: taskManager, visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
+    title:'Portfolio website', link:'https://github.com/Twise007/mySite'},
+    {imageName: taskManager, visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
     desc:'A full-stack resource management web app built using MERN stack to enable users track and manage tasks', title:'Task Manager'},
-    {id: '4', imageName: hog, visit:'https://hogchurch.netlify.app/', link:"https://github.com/Twise007/churchWebsite",
+    {imageName: hog, visit:'https://hogchurch.netlify.app/', link:"https://github.com/Twise007/churchWebsite",
     desc:'Designed and developed a church website with an interactive homepage using React, validated web links and navigation, and optimized screens for mobile', 
     title:'Church Website'},
-    {id: '5', imageName: weather, visit:'https://tee-o-weather.netlify.app/', 
+    {imageName: weather, visit:'https://tee-o-weather.netlify.app/', 
     desc:'Built an app to fetch data and report on current weather status, implementing features for real-time updates using React and Bootstrap', title:'Weather App', link:'https://github.com/'},
-    {id: '6', imageName: todo, visit:'https://tee-o-todo.netlify.app/', 
+    {imageName: todo, visit:'https://tee-o-todo.netlify.app/', 
     desc:'Developed a simple web app that allows users to add and delete to-do items; used JS, HTML, and CSS.', title:'Todo-App', link:'https://github.com/'},
   ];
 
