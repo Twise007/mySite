@@ -134,7 +134,7 @@ const projects = [
         "Tunde is a hardworking, resilient and passionate person. He is a goal oriented person, He gives his best to the progress of the team. a team player to the core",
       name: "Isreal",
       designation: "Colleague",
-      company: "456 Enterprises",
+      company: "",
       image: isreal,
     },
   ];
