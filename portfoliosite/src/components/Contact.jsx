@@ -77,7 +77,7 @@ import Social from "./Social";
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
       >
-        <img src={contact} alt='contact' className="max-w-sm h-[500px] w-auto object-cover" />
+        <img src={contact} alt='contact' className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px]  w-auto object-cover" />
       </motion.div>
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
