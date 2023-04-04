@@ -1,5 +1,5 @@
 import { BrowserRouter } from "react-router-dom";
-import { About, Contact, Hero, Navbar, Testimonies, Project } from './components'
+import { About, Contact, Hero, Navbar, Testimonies, Project, Tech } from './components'
 import { ToastContainer } from 'react-toastify';
 import { videoBg } from '../src/assets/index'
 import 'react-toastify/dist/ReactToastify.css';
@@ -17,6 +17,7 @@ function App() {
           <Hero />
         </div>
         <About />
+        <Tech />
         <Project />
         <Testimonies />
         <Contact />

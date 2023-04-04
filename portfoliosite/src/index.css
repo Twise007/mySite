@@ -18,7 +18,7 @@
   --color-primary: #050816;
   --color-sec: #211563;
   --color-hoverT: #dfd9ff;
-  --color-btn: #915EFF ;
+  --color-btn: #915eff;
 }
 
 .hash-span {
@@ -28,7 +28,7 @@
 }
 
 .transCard {
-  background: rgba(255, 255, 255, .1);
+  background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
 
@@ -48,12 +48,33 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
+.techIcon{
+  height: 40px;
+  pointer-events: none;
+  rotate: 90deg;
+}
+
+.wheel{
+  /* right: 50%; */
+  /* top: 5%; */
+  height: 50pc;
+  position: absolute;
+  overflow: hidden;
+}
 
 
+.skills img {
+  animation: scroll 30s linear infinite;
+}
+.skills p {
+  animation: scroll 30s linear infinite;
+}
 
-
-
-
-
-
-
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
