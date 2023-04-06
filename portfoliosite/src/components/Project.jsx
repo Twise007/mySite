@@ -57,8 +57,6 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
 const Project = () => {
   return (
     <>
-      {/* <motion.div variants={textVariant()}>
-      </motion.div> */}
       <p className={`${styles.sectionSubText} text-center`}>
         What I have done so far
       </p>
@@ -66,7 +64,7 @@ const Project = () => {
         Project I have worked on.
       </h2>
 
-      <div className="mt-2 flex flex-col">
+      <div className="flex flex-col">
         <VerticalTimeline>
           {projects.map((project, index) => (
             <ProjectCard key={`project-${index}`} index={index} {...project} />

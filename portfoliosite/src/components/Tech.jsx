@@ -1,24 +1,28 @@
 import React from "react";
+import { SectionWrapper } from "../hoc";
 import { motion } from "framer-motion";
+import { slideIn } from "../utils/motion";
 
 import { technologies } from "../constants";
 
 const Tech = () => {
   return (
-    <>
-      {/* <motion.div variants={fadeIn("right", "spring")}>
-       <div className="skills gap-5 items-center justify-center text-center flex relative ">
-        {technologies.map((item, index) => (
-          <div>
-            <img src={item.icon} alt="skills" className="object-cover " />
-            <p className="text-bg-white">{item.name}</p>
-          </div>
-        ))}
-      </div>
-    </motion.div> */}
+    <div className="relative flex flex-row flex-wrap no-wrap justify-center h-[20pc] md:h-[30pc] lg:h-[40pc] py-[3pc]">
+      <motion.div
+        variants={slideIn("left", "tween", 0.2, 1)}
+        className="mt-[-5pc] md:mt-[-8pc]"
+      >
+        <p className="text-start sm:text-[18px] text-[14px] text-bg-white uppercase tracking-wider">
+          Tools
+        </p>
+        <p className="text-start text-bg-btn font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+          Technologies.
+        </p>
+      </motion.div>
+
       {technologies.map((item, index) => (
         <motion.div
-          className="wheel"
+          className="absolute overflow-hidden h-[18pc] md:h-[30pc] lg:h-[40pc] rounded-full mt-4"
           key={index + 1}
           initial="initial"
           animate={["animate", "initailHide"]}
@@ -33,7 +37,7 @@ const Tech = () => {
               },
             },
             animate: {
-              rotate: 180,
+              rotate: 360,
               transition: {
                 duration: technologies.length,
                 repeat: Infinity,
@@ -43,14 +47,14 @@ const Tech = () => {
             },
           }}
         >
-          <div>
+          <div className="w-[58px] md:w-[72px] lg:w-[90px] px-3 ">
             <img src={item.icon} alt="skills" className="techIcon" />
             <p className="text-bg-white">{item.name}</p>
           </div>
         </motion.div>
       ))}
-    </>
+    </div>
   );
 };
 
-export default Tech;
+export default SectionWrapper(Tech, "tech");

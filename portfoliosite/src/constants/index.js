@@ -57,7 +57,7 @@ const technologies = [
     icon: css,
   },
   {
-    name: "JavaScript",
+    name: "Java Script",
     icon: javascript,
   },
   {
@@ -81,29 +81,29 @@ const technologies = [
     icon: mongodb,
   },
   {
-    name: "git",
+    name: "Git",
     icon: git,
   },
   {
-    name: "figma",
+    name: "`Figma",
     icon: figma,
   },
 ];
 
 const projects = [
   {
-    imageName: lms,
-    visit: "https://teecamp.netlify.app/",
-    desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to a teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Upload of profile picture with cloudinary",
-    title: "Learning Management System",
-    link: "https://github.com/Twise007/lms",
-  },
-  {
     imageName: enventory,
     visit: "https://enventory-app.vercel.app/",
     desc: "Built a CRUB app to help users record and manage stock of products, establishing navigation. Used MERN stack, Tailwind CSS, and Redux for state management.",
     title: "Enventory App",
     link: "https://github.com/Twise007/Enventory_app",
+  },
+  {
+    imageName: lms,
+    visit: "https://teecamp.netlify.app/",
+    desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to a teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Upload of profile picture with cloudinary",
+    title: "Learning Management System",
+    link: "https://github.com/Twise007/lms",
   },
   {
     imageName: project1,

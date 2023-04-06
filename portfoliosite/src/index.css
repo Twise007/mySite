@@ -48,27 +48,32 @@
   background: -webkit-linear-gradient(-90.13deg, #00cea8 1.9%, #bf61ff 97.5%);
 }
 
-.techIcon{
-  height: 40px;
+.techIcon {
   pointer-events: none;
-  rotate: 90deg;
+  rotate: -90deg;
 }
 
-.wheel{
-  /* right: 50%; */
-  /* top: 5%; */
-  height: 50pc;
-  position: absolute;
+.skills {
+  align-items: center;
   overflow: hidden;
+  height: 120px;
+  width: auto;
+  display: flex;
+  background: var(--color-white);
+  margin-top: -10px;
 }
 
-
-.skills img {
-  animation: scroll 30s linear infinite;
-}
-.skills p {
-  animation: scroll 30s linear infinite;
-}
+.skills img{
+        position: relative;
+        display: flex;
+        animation: scroll 30s linear infinite;
+        height: 70px;
+        width:70px;
+        object-fit: contain;
+        border-radius: 10px 10px 0px 10px;
+        box-shadow:10px 10px 10px var(--color-primary);
+        margin: 10px 20px 0px 20px;
+    }
 
 @keyframes scroll {
   0% {

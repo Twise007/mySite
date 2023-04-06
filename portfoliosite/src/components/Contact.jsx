@@ -70,7 +70,7 @@ const Contact = () => {
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Get in touch to me</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
-        <div className="hero md:justify-start ">
+        <div className="hero md:justify-start justify-center">
           <Social />
         </div>
         <p className="text-bg-white font-black text-[48px] text-center">OR</p>
@@ -81,12 +81,12 @@ const Contact = () => {
             <img
               src={contact}
               alt="contact"
-              className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px]  w-auto object-cover"
+              className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px] w-auto object-cover"
             />
           </motion.div>
           <motion.div
             variants={slideIn("left", "tween", 0.2, 1)}
-            className="flex-[0.75] w-full rounded-2xl p-8"
+            className="flex-[0.75] w-full rounded-2xl p-0 md:p-8"
           >
             <form
               ref={formRef}

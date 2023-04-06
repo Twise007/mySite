@@ -65,7 +65,7 @@ const About = () => {
         and watching football or playing football.
       </motion.p>
 
-      <div className="my-10 flex flex-wrap gap-10 items-center justify-center">
+      <div className="mt-10 flex flex-wrap gap-10 items-center justify-center">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}

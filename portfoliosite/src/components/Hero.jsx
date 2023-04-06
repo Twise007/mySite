@@ -7,7 +7,7 @@ import { myCv, profile } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="relative hero min-h-screen lg:pt-0 pt-14">
+    <div className="hero min-h-screen lg:pt-0 pt-14">
       <div className="hero-content flex-col lg:flex-row">
         <img
           src={profile}
