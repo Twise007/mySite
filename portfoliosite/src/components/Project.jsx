@@ -14,12 +14,19 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
     <VerticalTimelineElement
       contentStyle={{
         background: "var(--color-sec)",
-        color: "var(--color-white)",
+        color: "var(--color-btn)",
       }}
       contentArrowStyle={{ borderRight: "7px solid var(--color-sec)" }}
       date={
-        <div className={`${styles.sectionSubText} text-[var(--color-btn)]`}>
-          {title}
+        <div
+          className={`${styles.sectionSubText} cursor-pointer sm:hover:text-[20px] hover:text-[16px] duration-500`}
+        >
+          <div
+            onClick={() => window.open(visit, "_blank")}
+            className="text-[var(--color-btn)]"
+          >
+            {title}
+          </div>
         </div>
       }
       iconStyle={{ background: "var(--color-primary)" }}
@@ -49,7 +56,7 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
           </div>
         </div>
       </div>
-      <p>{desc}</p>
+      <p className="text-white">{desc}</p>
     </VerticalTimelineElement>
   );
 };

@@ -66,80 +66,82 @@ const Contact = () => {
   };
 
   return (
-    <div className={`rounded-2xl ${styles.padding} bg-bg-sec`}>
-      <motion.div variants={textVariant()}>
-        <p className={styles.sectionSubText}>Get in touch to me</p>
-        <h3 className={styles.sectionHeadText}>Contact</h3>
-        <div className="hero md:justify-start justify-center">
-          <Social />
-        </div>
-        <p className="text-bg-white font-black text-[48px] text-center">OR</p>
-      </motion.div>
-      <div className="">
-        <div className="hero-content flex-col lg:flex-row-reverse bg-bg-btn transCard rounded-2xl ">
-          <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
-            <img
-              src={contact}
-              alt="contact"
-              className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px] w-auto object-cover"
-            />
-          </motion.div>
-          <motion.div
-            variants={slideIn("left", "tween", 0.2, 1)}
-            className="flex-[0.75] w-full rounded-2xl p-0 md:p-8"
+    <div>
+      <div
+        className={`bg-bg-sec rounded-2xl ${styles.padding} min-h-[400px] md:min-h-[420px]`}
+      >
+        <motion.div variants={textVariant()}>
+          <p className={styles.sectionSubText} style={{color:"#fff"}}>Get in touch to me</p>
+          <h3 className={styles.sectionHeadText}>Contact</h3>
+          <div className="hero md:justify-start justify-center">
+            <Social />
+          </div>
+          <p className="text-white font-black text-[48px] text-center">
+            OR
+          </p>
+        </motion.div>
+      </div>
+      <div className="-mt-20 mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl transCard rounded-2xl ">
+        <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+          <img
+            src={contact}
+            alt="contact"
+            className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px] w-auto object-cover"
+          />
+        </motion.div>
+        <motion.div
+          variants={slideIn("left", "tween", 0.2, 1)}
+          className="flex-[0.75] w-full rounded-2xl p-0 md:p-8"
+        >
+          <form
+            ref={formRef}
+            onSubmit={handleSubmit}
+            className="flex flex-col gap-8 text-bg-white font-medium align-items justify-center"
           >
-            <form
-              ref={formRef}
-              onSubmit={handleSubmit}
-              className="flex flex-col gap-8 text-bg-white font-medium align-items justify-center"
-            >
-              <label className="flex flex-col">
-                <span className=" mb-4">Your Name</span>
-                <input
-                  type="text"
-                  name="name"
-                  value={form.name}
-                  onChange={handleChange}
-                  required
-                  placeholder="What's your good name?"
-                  className="transCard py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none border-none"
-                />
-              </label>
-              <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">Your email</span>
-                <input
-                  type="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  required
-                  placeholder="What's your web address?"
-                  className="transCard py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none border-none"
-                />
-              </label>
-              <label className="flex flex-col">
-                <span className="text-white font-medium mb-4">
-                  Your Message
-                </span>
-                <textarea
-                  rows={7}
-                  name="message"
-                  value={form.message}
-                  onChange={handleChange}
-                  placeholder="What you want to say?"
-                  className="transCard py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none border-none"
-                />
-              </label>
+            <label className="flex flex-col">
+              <span className="font-medium mb-4">Your Name</span>
+              <input
+                type="text"
+                name="name"
+                value={form.name}
+                onChange={handleChange}
+                required
+                placeholder="What's your good name?"
+                className="transCard border-[1px] border-bg-sec py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="font-medium mb-4">Your email</span>
+              <input
+                type="email"
+                name="email"
+                value={form.email}
+                onChange={handleChange}
+                required
+                placeholder="What's your web address?"
+                className="transCard border-[1px] border-bg-sec py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none"
+              />
+            </label>
+            <label className="flex flex-col">
+              <span className="font-medium mb-4">Your Message</span>
+              <textarea
+                rows={7}
+                name="message"
+                value={form.message}
+                onChange={handleChange}
+                placeholder="What you want to say?"
+                className="transCard border-[1px] border-bg-sec py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none"
+              />
+            </label>
 
-              <button
-                type="submit"
-                className="bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn "
-              >
-                {loading ? "Sending..." : "Send"}
-              </button>
-            </form>
-          </motion.div>
-        </div>
+            <button
+              type="submit"
+              className="bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-bg-white font-bold shadow-md shadow-bg-btn "
+            >
+              {loading ? "Sending..." : "Send"}
+            </button>
+          </form>
+        </motion.div>
       </div>
     </div>
   );

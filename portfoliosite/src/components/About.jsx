@@ -11,7 +11,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
   <Tilt className="xs:w-[260px] w-full">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card"
+      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-2xl"
     >
       <div
         options={{
@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-bg-sec card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col justify-center"
+        className="bg-bg-primary card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col justify-center"
       >
         <figure>
           <img

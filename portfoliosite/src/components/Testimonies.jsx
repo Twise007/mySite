@@ -46,10 +46,14 @@ const TestimoniesCard = ({
 
 const Testimonies = () => {
   return (
-    <div className={`mt-12  rounded-[20px] transCard`}>
-      <div className={`bg-bg-sec rounded-2xl ${styles.padding} min-h-[300px]`}>
+    <div>
+      <div
+        className={`bg-bg-sec rounded-2xl ${styles.padding} min-h-[280px] md:min-h-[300px]`}
+      >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText}>What others say me</p>
+          <p className={styles.sectionSubText} style={{ color: "#fff" }}>
+            What others say me
+          </p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>

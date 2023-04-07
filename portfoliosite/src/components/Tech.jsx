@@ -12,10 +12,10 @@ const Tech = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="mt-[-5pc] md:mt-[-8pc]"
       >
-        <p className="text-start sm:text-[18px] text-[14px] text-bg-white uppercase tracking-wider">
+        <p className="text-center sm:text-[18px] text-[14px] text-bg-white uppercase tracking-wider">
           Tools
         </p>
-        <p className="text-start text-bg-btn font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
+        <p className="text-center text-bg-btn font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
           Technologies.
         </p>
       </motion.div>

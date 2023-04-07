@@ -11,16 +11,24 @@
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
   color-scheme: dark;
+  /* transition: all 0.3s ease-in-out; */
 }
 
 :root {
-  --color-white: #fff;
-  --color-primary: #050816;
+  --color-white:#050816 ;
+  --color-primary: #fcfcf0;
   --color-sec: #211563;
   --color-hoverT: #dfd9ff;
   --color-btn: #915eff;
 }
 
+/* [data-theme="dark"] {
+  --color-white: #ff0000;
+  --color-primary: #fff;
+  --color-sec: #211563;
+  --color-hoverT: #dfd9ff;
+  --color-btn: #915eff;
+} */
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;

@@ -9,6 +9,7 @@ import {
 import { logo, menu, close } from "../assets";
 
 import { styles } from "../styles";
+import Mode from "./Mode";
 
 const navLinks = [
   { title: "About", id: "about", icon: <BsFillPersonLinesFill /> },
@@ -41,8 +42,10 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } navbar w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-bg-primary" : "bg-transparent"
+      } navbar w-full flex items-center py-5 fixed top-0 z-20 shadow-card ${
+        scrolled
+          ? "bg-bg-primary"
+          : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -55,18 +58,20 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-bg-white text-[18px] font-bold cursor-pointer flex hover:text-bg-btn">
+          <p className="text-bg-btn text-[18px] font-bold cursor-pointer flex hover:text-bg-btn">
             TeeTech &nbsp;
             <span className="sm:block hidden"> | Portfolio</span>
           </p>
         </Link>
+
+        <Mode />
 
         <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-bg-btn" : "text-bg-hoverT"
+                active === nav.title ? "text-bg-btn" : "text-bg-white"
               } hover:text-bg-btn text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
@@ -86,13 +91,13 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen shadow-2xl bg-bg-primary`}
+            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen shadow-2xl glass`}
           >
             <ul className="list-none flex justify-start flex-1 flex-col gap-4 menu">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
-                  className={`w-[13pc] font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] hover:text-bg-btn w-full ${
+                  className={`w-[13pc] font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] ${
                     active === nav.title ? "text-bg-btn" : "text-bg-hoverT"
                   }`}
                   onClick={() => {
@@ -100,7 +105,10 @@ const Navbar = () => {
                     setActive(nav.title);
                   }}
                 >
-                  <a className="rounded-md duration-300" href={`#${nav.id}`}>
+                  <a
+                    className="rounded-md duration-300 text-bg-white hover:text-bg-btn"
+                    href={`#${nav.id}`}
+                  >
                     <span className="text-[26px] text-bg-btn">{nav.icon}</span>
                     {nav.title}
                   </a>
