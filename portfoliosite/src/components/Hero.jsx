@@ -48,7 +48,7 @@ const Hero = () => {
             </p>
             <div className="w-full flex justify-start items-center mt-2 pb-12">
               <a href={myCv} download="Tunde Oke Cv.pdf">
-                <div className="w-full h-[46px] rounded-3xl border-4 border-bg-white dark:border-bg-primary flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn dark:hover:border-bg-btn">
+                <div className="w-full h-[46px] rounded-3xl border-4 border-bg-white flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn dark:hover:border-bg-btn">
                   <motion.div
                     animate={{
                       y: [0, 12, 0],

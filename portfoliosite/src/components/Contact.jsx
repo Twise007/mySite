@@ -6,7 +6,7 @@ import { contact } from "../assets";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
-import { slideIn, textVariant } from "../utils/motion";
+import { textVariant } from "../utils/motion";
 import Social from "./Social";
 
 const Contact = () => {
@@ -81,22 +81,16 @@ const Contact = () => {
           </p>
         </motion.div>
       </div>
-      <div className="-mt-20 mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl transCard rounded-2xl ">
-        <motion.div variants={slideIn("right", "tween", 0.2, 1)}>
+      <motion.div variants={textVariant()} className="-mt-20 mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl transCard rounded-2xl ">
           <img
             src={contact}
             alt="contact"
             className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px] w-auto object-cover"
           />
-        </motion.div>
-        <motion.div
-          variants={slideIn("left", "tween", 0.2, 1)}
-          className="flex-[0.75] w-full rounded-2xl p-0 md:p-8"
-        >
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-8 font-medium align-items justify-center"
+            className="flex flex-col gap-8 font-medium align-items justify-center w-full"
           >
             <label className="flex flex-col">
               <span className="font-medium mb-4">Your Name</span>
@@ -141,8 +135,7 @@ const Contact = () => {
               {loading ? "Sending..." : "Send"}
             </button>
           </form>
-        </motion.div>
-      </div>
+      </motion.div>
     </div>
   );
 };

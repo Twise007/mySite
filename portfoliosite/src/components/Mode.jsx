@@ -34,7 +34,7 @@ const Mode = () => {
   return (
     <button
       onClick={handleThemeSwitch}
-      className="fixed bottom-16 z-30 rounded-full ml-1 p-2 duration-600  bg-bg-btn hover:bg-bg-sec"
+      className="fixed bottom-16 z-30 rounded-full ml-1 p-2 duration-100 bg-bg-btn hover:bg-bg-sec"
     >
       {icon}
     </button>
