@@ -85,7 +85,7 @@ const technologies = [
     icon: git,
   },
   {
-    name: "`Figma",
+    name: "Figma",
     icon: figma,
   },
 ];
@@ -142,7 +142,7 @@ const testimonials = [
     testimonial:
       "I highly recommend Tunde as a candidate best suite for position, his level of agility and tenacity cannot be over-emphasis in delivering projects.",
     name: "Samuel Linus",
-    designation: "CEO",
+    designation: "Instructor Lead",
     company: "Nerdy Eye",
     image: samuel,
   },
@@ -151,7 +151,7 @@ const testimonials = [
       "Tunde is a very hardworking and has passion for coding (eye-catching products or the exact design). He delivers his tasks right before the deadline with attention to detail and produces product solutions",
     name: "Ademiju Femi",
     designation: "Colleague",
-    company: "",
+    company: "Nerdy Eye",
     image: femi,
   },
   {
@@ -159,7 +159,7 @@ const testimonials = [
       "Tunde is a hardworking, resilient and passionate person. He is a goal oriented person, He gives his best to the progress of the team. a team player to the core",
     name: "Isreal",
     designation: "Colleague",
-    company: "",
+    company: "Nerdy Eye",
     image: isreal,
   },
 ];

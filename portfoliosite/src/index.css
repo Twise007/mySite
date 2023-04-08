@@ -10,7 +10,6 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
-  /* transition: all 0.3s ease-in-out; */
 }
 
 :root {
@@ -19,6 +18,14 @@
   --color-sec: #211563;
   --color-hoverT: #dfd9ff;
   --color-btn: #915eff;
+}
+
+.videoBg {
+  background: url(../src/assets/videoBg.mp4);
+}
+
+.videoBg2 {
+  background: url(../src/assets/videoBg2.mp4);
 }
 
 

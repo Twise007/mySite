@@ -6,7 +6,8 @@ import {
   BsFillPieChartFill,
   BsPersonVcard,
 } from "react-icons/bs";
-import { logo, menu, close } from "../assets";
+import Hamburger from "hamburger-react";
+import { logo } from "../assets";
 import { styles } from "../styles";
 
 const navLinks = [
@@ -40,10 +41,8 @@ const Navbar = () => {
     <nav
       className={`${
         styles.paddingX
-      } navbar w-full flex items-center py-5 fixed top-0 z-20 shadow-card ${
-        scrolled
-          ? "bg-bg-primary"
-          : "bg-transparent"
+      } navbar w-full flex items-center py-5 fixed top-0 z-20 ${
+        scrolled ? "bg-bg-primary dark:bg-bg-white" : "bg-transparent"
       }`}
     >
       <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
@@ -56,7 +55,7 @@ const Navbar = () => {
           }}
         >
           <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
-          <p className="text-bg-btn text-[18px] font-bold cursor-pointer flex hover:text-bg-btn">
+          <p className="text-[18px] font-bold cursor-pointer flex hover:text-bg-btn">
             TeeTech &nbsp;
             <span className="sm:block hidden"> | Portfolio</span>
           </p>
@@ -67,8 +66,10 @@ const Navbar = () => {
             <li
               key={nav.id}
               className={`${
-                active === nav.title ? "text-bg-btn" : "text-bg-white"
-              } hover:text-bg-btn text-[18px] font-medium cursor-pointer`}
+                active === nav.title
+                  ? "text-bg-btn"
+                  : "text-bg-white dark:text-bg-primary"
+              } hover:text-bg-btn dark:hover:text-bg-btn text-[18px] font-medium cursor-pointer`}
               onClick={() => setActive(nav.title)}
             >
               <a href={`#${nav.id}`}>{nav.title}</a>
@@ -77,17 +78,11 @@ const Navbar = () => {
         </ul>
 
         <div className="md:hidden flex flex-1 justify-end items-center">
-          <img
-            src={toggle ? close : menu}
-            alt="menu"
-            className="w-[28px] h-[28px] object-contain"
-            onClick={() => setToggle(!toggle)}
-          />
-
+          <Hamburger toggled={toggle} toggle={setToggle} />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen shadow-2xl b`}
+            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen bg-bg-primary dark:bg-bg-white`}
           >
             <ul className="list-none flex justify-start flex-1 flex-col gap-4 menu">
               {navLinks.map((nav) => (

@@ -7,7 +7,7 @@ import { myCv, profile } from "../assets";
 
 const Hero = () => {
   return (
-    <div className="hero min-h-screen lg:pt-0 pt-14">
+    <div className="hero min-h-screen lg:pt-0 pt-14 text-white">
       <div className="hero-content flex-col lg:flex-row">
         <img
           src={profile}
@@ -23,13 +23,13 @@ const Hero = () => {
             <div className="w-1 sm:h-80 h-40 violet-gradient" />
           </div>
           <div>
-            <h1 className={`${styles.heroHeadText} text-bg-hoverT`}>
+            <h1 className={`${styles.heroHeadText}`}>
               Hi, I'm <span className="text-bg-btn">Tunde</span>
             </h1>
             <h2
-              className={`text-white font-medium lg:text-[36px] sm:text-[32px] xs:text-[26px] text-[22px] lg:leading-[46px]`}
+              className={`text-bg-hoverT font-medium lg:text-[36px] sm:text-[32px] xs:text-[26px] text-[22px] lg:leading-[46px]`}
             >
-              <span className="text-bg-hoverT font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] text-[10px] mr-2 ">
+              <span className="text-bg-white font-medium lg:text-[30px] sm:text-[26px] xs:text-[20px] text-[16px] lg:leading-[40px] text-[10px] mr-2 ">
                 A vabriant
               </span>
               <Typewriter
@@ -42,13 +42,13 @@ const Hero = () => {
                 words={["Web designer", "Web developer", "Network Engineer"]}
               />
             </h2>
-            <p className={`${styles.heroSubText} mt-2 text-hoverT`}>
+            <p className={`${styles.heroSubText} mt-2`}>
               Turning ideas into real life <br className="sm:block hidden" />
               profit making product in the digital world.
             </p>
-            <div className="w-full flex justify-start items-center mt-2 pb-12 text-bg-hoverT">
+            <div className="w-full flex justify-start items-center mt-2 pb-12">
               <a href={myCv} download="Tunde Oke Cv.pdf">
-                <div className="w-full h-[46px] rounded-3xl border-4 border-bg-hoverT flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn">
+                <div className="w-full h-[46px] rounded-3xl border-4 border-bg-white dark:border-bg-primary flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn dark:hover:border-bg-btn">
                   <motion.div
                     animate={{
                       y: [0, 12, 0],

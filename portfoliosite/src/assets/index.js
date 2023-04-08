@@ -4,8 +4,6 @@ import creator from "./creator.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
 import github from "./github.png";
-import menu from "./menu.svg";
-import close from "./close.svg";
 import enventory from "./enventory.png";
 import femi from "./femi.png";
 import isreal from "./isreal.png";
@@ -20,6 +18,7 @@ import lms from "./lms.png";
 import myCv from "./myCv.pdf";
 import contact from "./contact.svg";
 import videoBg from "./videoBg.mp4";
+import videoBg2 from "./videoBg2.mp4";
 
 
 
@@ -39,6 +38,7 @@ import tripguide from "./tripguide.png";
 export {
   lms,
   project1,
+  videoBg2,
   videoBg,
   contact,
   profile,
@@ -57,8 +57,6 @@ export {
   mobile,
   web,
   github,
-  menu,
-  close,
   css,
   figma,
   git,

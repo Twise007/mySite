@@ -29,9 +29,9 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
           </div>
         </div>
       }
-      iconStyle={{ background: "var(--color-primary)" }}
+      iconClassName="bg-bg-primary dark:bg-bg-white"
       icon={
-        <div className="justify-center items-center w-full h-full text-white">
+        <div className="justify-center items-center w-full h-full text-bg-white dark:text-bg-primary">
           <BsGlobe className="text-3xl" />
         </div>
       }

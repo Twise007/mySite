@@ -20,7 +20,7 @@ const TestimoniesCard = ({
       variants={fadeIn("", "spring", index * 0.5, 1)}
       className="transCard shadow-2xl p-5 rounded-3xl xs:w-[320px] w-full"
     >
-      <p className="text-bg-white font-black text-[48px]">"</p>
+      <p className="text-bg-white dark:text-bg-primary font-black text-[48px]">"</p>
       <div className="">
         <p className="h-[11pc] w-auto overflow-y-auto tracking-wider text-[18px]">
           {testimonial}
@@ -29,7 +29,7 @@ const TestimoniesCard = ({
           <div className="flex-1 flex flex-col">
             <p className="font-medium text-[16px]">@ {name}</p>
             <p className="mt-1 text-bg-btn text-[12px]">
-              {designation} of <span className="text-[14px]"> {company}</span>
+              {designation} at <span className="text-[14px]"> {company}</span>
             </p>
           </div>
 

@@ -19,7 +19,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
           scale: 1,
           speed: 450,
         }}
-        className="bg-bg-primary card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col justify-center"
+        className="bg-bg-primary dark:bg-bg-white card rounded-[20px] pt-2 min-h-[280px] flex items-center flex-col justify-center"
       >
         <figure>
           <img
@@ -32,7 +32,9 @@ const ServiceCard = ({ index, title, icon, text }) => (
           <h3 className="card-title text-bg-btn text-[20px] font-bold items-center text-center justify-center">
             {title}
           </h3>
-          <p className="h-6 w-auto overflow-y-auto">{text}</p>
+          <p className="h-6 w-auto overflow-y-auto">
+            {text}
+          </p>
         </div>
       </div>
     </motion.div>
