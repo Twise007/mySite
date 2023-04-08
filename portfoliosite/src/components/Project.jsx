@@ -31,7 +31,7 @@ const ProjectCard = ({ desc, imageName, link, visit, title }) => {
       }
       iconStyle={{ background: "var(--color-primary)" }}
       icon={
-        <div className="justify-center items-center w-full h-full text-bg-white">
+        <div className="justify-center items-center w-full h-full text-white">
           <BsGlobe className="text-3xl" />
         </div>
       }

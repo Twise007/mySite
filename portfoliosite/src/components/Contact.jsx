@@ -96,7 +96,7 @@ const Contact = () => {
           <form
             ref={formRef}
             onSubmit={handleSubmit}
-            className="flex flex-col gap-8 text-bg-white font-medium align-items justify-center"
+            className="flex flex-col gap-8 font-medium align-items justify-center"
           >
             <label className="flex flex-col">
               <span className="font-medium mb-4">Your Name</span>
@@ -107,7 +107,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 placeholder="What's your good name?"
-                className="transCard border-[1px] border-bg-sec py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none"
+                className="transCard border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
               />
             </label>
             <label className="flex flex-col">
@@ -119,7 +119,7 @@ const Contact = () => {
                 onChange={handleChange}
                 required
                 placeholder="What's your web address?"
-                className="transCard border-[1px] border-bg-sec py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none"
+                className="transCard border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
               />
             </label>
             <label className="flex flex-col">
@@ -130,13 +130,13 @@ const Contact = () => {
                 value={form.message}
                 onChange={handleChange}
                 placeholder="What you want to say?"
-                className="transCard border-[1px] border-bg-sec py-4 px-6 placeholder:text-bg-hover rounded-lg outline-none"
+                className="transCard border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
               />
             </label>
 
             <button
               type="submit"
-              className="bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-bg-white font-bold shadow-md shadow-bg-btn "
+              className="bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn "
             >
               {loading ? "Sending..." : "Send"}
             </button>

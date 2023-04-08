@@ -6,6 +6,6 @@ import Project from "./Project";
 import Testimonies from "./Testimonies";
 import Contact from "./Contact";
 import Social from "./Social";
-import Mode from "./Mode";
+import Footer from "./Footer";
 
-export { Hero, Navbar, About, Tech, Project, Testimonies, Contact, Social, Mode };
+export { Hero, Navbar, About, Tech, Project, Testimonies, Contact, Social, Footer };

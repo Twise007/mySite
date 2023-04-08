@@ -22,12 +22,12 @@ const TestimoniesCard = ({
     >
       <p className="text-bg-white font-black text-[48px]">"</p>
       <div className="">
-        <p className="h-[11pc] w-auto overflow-y-auto text-bg-white tracking-wider text-[18px]">
+        <p className="h-[11pc] w-auto overflow-y-auto tracking-wider text-[18px]">
           {testimonial}
         </p>
         <div className="flex justify-between items-center gap-1 mt-3">
           <div className="flex-1 flex flex-col">
-            <p className="text-white font-medium text-[16px]">@ {name}</p>
+            <p className="font-medium text-[16px]">@ {name}</p>
             <p className="mt-1 text-bg-btn text-[12px]">
               {designation} of <span className="text-[14px]"> {company}</span>
             </p>

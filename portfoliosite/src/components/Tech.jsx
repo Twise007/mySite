@@ -12,7 +12,7 @@ const Tech = () => {
         variants={slideIn("left", "tween", 0.2, 1)}
         className="mt-[-5pc] md:mt-[-8pc]"
       >
-        <p className="text-center sm:text-[18px] text-[14px] text-bg-white uppercase tracking-wider">
+        <p className="text-center sm:text-[18px] text-[14px] uppercase tracking-wider">
           Tools
         </p>
         <p className="text-center text-bg-btn font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]">
@@ -49,7 +49,7 @@ const Tech = () => {
         >
           <div className="w-[58px] md:w-[72px] lg:w-[90px] px-3 ">
             <img src={item.icon} alt="skills" className="techIcon" />
-            <p className="text-bg-white">{item.name}</p>
+            <p>{item.name}</p>
           </div>
         </motion.div>
       ))}

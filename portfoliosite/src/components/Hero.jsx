@@ -46,9 +46,9 @@ const Hero = () => {
               Turning ideas into real life <br className="sm:block hidden" />
               profit making product in the digital world.
             </p>
-            <div className="w-full flex justify-start items-center mt-2 pb-12 text-hoverT">
+            <div className="w-full flex justify-start items-center mt-2 pb-12 text-bg-hoverT">
               <a href={myCv} download="Tunde Oke Cv.pdf">
-                <div className="w-full h-[46px] rounded-3xl border-4 border-hoverT flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn">
+                <div className="w-full h-[46px] rounded-3xl border-4 border-bg-hoverT flex justify-center items-center p-2 hover:text-bg-btn hover:border-bg-btn">
                   <motion.div
                     animate={{
                       y: [0, 12, 0],

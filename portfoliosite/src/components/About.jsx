@@ -32,7 +32,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
           <h3 className="card-title text-bg-btn text-[20px] font-bold items-center text-center justify-center">
             {title}
           </h3>
-          <p className="h-6 w-auto overflow-y-auto text-bg-white">{text}</p>
+          <p className="h-6 w-auto overflow-y-auto">{text}</p>
         </div>
       </div>
     </motion.div>
@@ -49,7 +49,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
-        className="mt-4 text-bg-white text-[17px] hero leading-[30px] justify-center"
+        className="mt-4 text-[17px] hero leading-[30px] justify-center"
       >
         A MERN stack developer that proffer professional, efficient, and
         effecftive design service for Start-Up and Cooperate companies in

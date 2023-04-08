@@ -7,9 +7,7 @@ import {
   BsPersonVcard,
 } from "react-icons/bs";
 import { logo, menu, close } from "../assets";
-
 import { styles } from "../styles";
-import Mode from "./Mode";
 
 const navLinks = [
   { title: "About", id: "about", icon: <BsFillPersonLinesFill /> },
@@ -64,8 +62,6 @@ const Navbar = () => {
           </p>
         </Link>
 
-        <Mode />
-
         <ul className="list-none hidden md:flex flex-row gap-10">
           {navLinks.map((nav) => (
             <li
@@ -91,14 +87,14 @@ const Navbar = () => {
           <div
             className={`${
               !toggle ? "hidden" : "flex"
-            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen shadow-2xl glass`}
+            } pt-6 px-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen shadow-2xl b`}
           >
             <ul className="list-none flex justify-start flex-1 flex-col gap-4 menu">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
                   className={`w-[13pc] font-poppins font-medium cursor-pointer text-[16px] hover:text-[18px] ${
-                    active === nav.title ? "text-bg-btn" : "text-bg-hoverT"
+                    active === nav.title ? "text-bg-btn" : ""
                   }`}
                   onClick={() => {
                     setToggle(!toggle);
@@ -106,7 +102,7 @@ const Navbar = () => {
                   }}
                 >
                   <a
-                    className="rounded-md duration-300 text-bg-white hover:text-bg-btn"
+                    className="rounded-md duration-300 hover:text-bg-btn"
                     href={`#${nav.id}`}
                   >
                     <span className="text-[26px] text-bg-btn">{nav.icon}</span>
