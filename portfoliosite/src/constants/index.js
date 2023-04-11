@@ -19,7 +19,9 @@ import {
   nodejs,
   mongodb,
   git,
-  figma,
+  cisco,
+  next,
+  sanity,
   project1,
   lms,
 } from "../assets";
@@ -65,6 +67,10 @@ const technologies = [
     icon: reactjs,
   },
   {
+    name: "Next JS",
+    icon: next,
+  },
+  {
     name: "Redux Toolkit",
     icon: redux,
   },
@@ -81,8 +87,16 @@ const technologies = [
     icon: mongodb,
   },
   {
+    name: "Sanity",
+    icon: sanity,
+  },
+  {
     name: "Git",
     icon: git,
+  },
+  {
+    name: "Cisco",
+    icon: cisco,
   },
 ];
 

@@ -23,7 +23,9 @@ import videoBg2 from "./videoBg2.mp4";
 
 
 import css from "./tech/css.png";
-import figma from "./tech/figma.png";
+import cisco from "./tech/cisco.png";
+import next from "./tech/next.png";
+import sanity from "./tech/sanity.png";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
@@ -58,7 +60,9 @@ export {
   web,
   github,
   css,
-  figma,
+  cisco,
+  next,
+  sanity,
   git,
   html,
   javascript,
