@@ -28,7 +28,7 @@ const services = [
   {
     title: "Web Developer",
     icon: web,
-    text: "I am very efficient and effective in HTML, CSS, SCSS, JS, REACTJS in building a beautiful user expreience.",
+    text: "I am very efficient and effective in HTML, CSS, SCSS, JS, REACTJS in building a beautiful user experience.",
   },
   {
     title: "Backend Developer",
