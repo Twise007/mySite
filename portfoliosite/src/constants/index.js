@@ -77,16 +77,12 @@ const technologies = [
     icon: nodejs,
   },
   {
-    name: "MongoDB",
+    name: "Mongo DB",
     icon: mongodb,
   },
   {
     name: "Git",
     icon: git,
-  },
-  {
-    name: "Figma",
-    icon: figma,
   },
 ];
 
