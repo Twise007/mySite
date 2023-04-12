@@ -49,7 +49,7 @@ const Tech = () => {
         >
           <div className="w-[58px] md:w-[72px] lg:w-[90px] px-3 ">
             <img src={item.icon} alt="skills" className="techIcon" />
-            <p>{item.name}</p>
+            <p className="pl-2 text-center">{item.name}</p>
           </div>
         </motion.div>
       ))}

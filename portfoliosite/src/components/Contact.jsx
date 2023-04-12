@@ -71,70 +71,73 @@ const Contact = () => {
         className={`bg-bg-sec rounded-2xl ${styles.padding} min-h-[400px] md:min-h-[420px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText} style={{color:"#fff"}}>Get in touch to me</p>
+          <p className={styles.sectionSubText} style={{ color: "#fff" }}>
+            Get in touch to me
+          </p>
           <h3 className={styles.sectionHeadText}>Contact</h3>
           <div className="hero md:justify-start justify-center">
             <Social />
           </div>
-          <p className="text-white font-black text-[48px] text-center">
-            OR
-          </p>
+          <p className="text-white font-black text-[48px] text-center">OR</p>
         </motion.div>
       </div>
-      <motion.div variants={textVariant()} className="-mt-20 mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl transCard rounded-2xl ">
-          <img
-            src={contact}
-            alt="contact"
-            className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px] w-auto object-cover"
-          />
-          <form
-            ref={formRef}
-            onSubmit={handleSubmit}
-            className="flex flex-col gap-8 font-medium align-items justify-center w-full"
-          >
-            <label className="flex flex-col">
-              <span className="font-medium mb-4">Your Name</span>
-              <input
-                type="text"
-                name="name"
-                value={form.name}
-                onChange={handleChange}
-                required
-                placeholder="What's your good name?"
-                className="transCard border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
-              />
-            </label>
-            <label className="flex flex-col">
-              <span className="font-medium mb-4">Your email</span>
-              <input
-                type="email"
-                name="email"
-                value={form.email}
-                onChange={handleChange}
-                required
-                placeholder="What's your web address?"
-                className="transCard border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
-              />
-            </label>
-            <label className="flex flex-col">
-              <span className="font-medium mb-4">Your Message</span>
-              <textarea
-                rows={7}
-                name="message"
-                value={form.message}
-                onChange={handleChange}
-                placeholder="What you want to say?"
-                className="transCard border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
-              />
-            </label>
+      <motion.div
+        variants={textVariant()}
+        className="-mt-20 mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl bg-bg-primary dark:bg-bg-white border-[1px] border-bg-sec rounded-2xl "
+      >
+        <img
+          src={contact}
+          alt="contact"
+          className="max-w-sm h-[150px] md:h-[300px] lg:h-[380px] w-auto object-cover"
+        />
+        <form
+          ref={formRef}
+          onSubmit={handleSubmit}
+          className="flex flex-col gap-8 font-medium align-items justify-center w-full"
+        >
+          <label className="flex flex-col">
+            <span className="font-medium mb-4">Your Name</span>
+            <input
+              type="text"
+              name="name"
+              value={form.name}
+              onChange={handleChange}
+              required
+              placeholder="What's your good name?"
+              className="bg-bg-primary dark:bg-bg-white border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="font-medium mb-4">Your email</span>
+            <input
+              type="email"
+              name="email"
+              value={form.email}
+              onChange={handleChange}
+              required
+              placeholder="What's your web address?"
+              className="bg-bg-primary dark:bg-bg-white border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
+            />
+          </label>
+          <label className="flex flex-col">
+            <span className="font-medium mb-4">Your Message</span>
+            <textarea
+              rows={7}
+              name="message"
+              value={form.message}
+              onChange={handleChange}
+              placeholder="What you want to say?"
+              className="bg-bg-primary dark:bg-bg-white border-[1px] border-bg-sec py-4 px-6 rounded-lg outline-none"
+            />
+          </label>
 
-            <button
-              type="submit"
-              className="bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn "
-            >
-              {loading ? "Sending..." : "Send"}
-            </button>
-          </form>
+          <button
+            type="submit"
+            className="bg-bg-btn hover:bg-bg-sec duration-500 py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-bg-btn "
+          >
+            {loading ? "Sending..." : "Send"}
+          </button>
+        </form>
       </motion.div>
     </div>
   );

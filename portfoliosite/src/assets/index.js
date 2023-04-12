@@ -33,11 +33,15 @@ import mongodb from "./tech/mongodb.png";
 import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
+import sass from "./tech/sass.png";
+import adobe from "./tech/adobe.png";
 import tailwind from "./tech/tailwind.png";
 
 import tripguide from "./tripguide.png";
 
 export {
+  sass,
+  adobe,
   lms,
   project1,
   videoBg2,

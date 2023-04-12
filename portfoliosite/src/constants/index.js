@@ -1,4 +1,6 @@
 import {
+  sass,
+  adobe,
   hog,
   todo,
   femi,
@@ -35,7 +37,7 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
-    text: "I am very efficient and effective in NODE JS, EXPRESS JS, MONDO DB in building a stressless technology for the users.",
+    text: "I am very efficient and effective in NODE JS, EXPRESS JS, MONDO DB and SANITY in building a stressless technology for the users.",
   },
   {
     title: "Ui-Ux",
@@ -57,6 +59,10 @@ const technologies = [
   {
     name: "CSS 3",
     icon: css,
+  },
+  {
+    name: "SASS",
+    icon: sass,
   },
   {
     name: "Java Script",
@@ -93,6 +99,10 @@ const technologies = [
   {
     name: "Git",
     icon: git,
+  },
+  {
+    name: "Adobe XD",
+    icon: adobe,
   },
   {
     name: "Cisco",
