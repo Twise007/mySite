@@ -2,10 +2,23 @@ import React from "react";
 import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Autoplay, Navigation } from "swiper";
+import "swiper/css";
+import "swiper/css/pagination";
+import "swiper/css/navigation";
+
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
+
+const navLinks = [
+  { title: "About", id: "about",},
+  { title: "Project", id: "project", },
+  { title: "Testimonies", id: "testimonies",  },
+  { title: "Contact", id: "contact", },
+];
 
 const TestimoniesCard = ({
   index,
@@ -15,12 +28,11 @@ const TestimoniesCard = ({
   company,
   image,
 }) => (
-  <Tilt>
     <motion.div
       variants={fadeIn("", "spring", index * 0.5, 1)}
-      className="transCard shadow-2xl p-5 rounded-3xl xs:w-[320px] w-full"
+      className=" p-5 rounded-3xl xs:w-[320px] w-full transCard "
     >
-      <p className="text-bg-white dark:text-bg-primary font-black text-[48px]">"</p>
+      <p className="text-bg-white font-black text-[48px]">"</p>
       <div className="">
         <p className="h-[11pc] w-auto overflow-y-auto tracking-wider text-[18px]">
           {testimonial}
@@ -41,7 +53,7 @@ const TestimoniesCard = ({
         </div>
       </div>
     </motion.div>
-  </Tilt>
+
 );
 
 const Testimonies = () => {
@@ -57,17 +69,27 @@ const Testimonies = () => {
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <div
-        className={`-mt-20 pb-14 ${styles.paddingX} flex flex-wrap gap-7 justify-center`}
+      <Swiper
+        spaceBetween={30}
+        centeredSlides={true}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
+        navigation={true}
+        modules={[Autoplay, Navigation]}
+        className={`-mt-20 pb-14 ${styles.paddingX} swiper hero items-center`}
       >
         {testimonials.map((testimonial, index) => (
-          <TestimoniesCard
-            key={testimonial.name}
-            index={index}
-            {...testimonial}
-          />
+          <SwiperSlide>
+            <TestimoniesCard
+              key={testimonial.name}
+              index={index}
+              {...testimonial}
+            />
+          </SwiperSlide>
         ))}
-      </div>
+      </Swiper>
     </div>
   );
 };

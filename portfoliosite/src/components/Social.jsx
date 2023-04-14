@@ -1,14 +1,12 @@
 import React from "react";
 import {
   BsGithub,
-  BsWhatsapp,
   BsFacebook,
   BsTwitter,
   BsLinkedin,
 } from "react-icons/bs";
 
 const datas = [
-  { link: "https://wa.me/+2348102904585", icon: <BsWhatsapp /> },
   { link: "https://facebook.com/OgbeniTundeoke", icon: <BsFacebook /> },
   { link: "https://twitter.com/tundeoke007", icon: <BsTwitter /> },
   { link: "https://github.com/Twise007", icon: <BsGithub /> },
