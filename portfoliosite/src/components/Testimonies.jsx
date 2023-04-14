@@ -3,6 +3,7 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectCoverflow, Pagination } from "swiper";
 import { Autoplay, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -28,32 +29,31 @@ const TestimoniesCard = ({
   company,
   image,
 }) => (
-    <motion.div
-      variants={fadeIn("", "spring", index * 0.5, 1)}
-      className=" p-5 rounded-3xl xs:w-[320px] w-full transCard "
-    >
-      <p className="text-bg-white font-black text-[48px]">"</p>
-      <div className="">
-        <p className="h-[11pc] w-auto overflow-y-auto tracking-wider text-[18px]">
-          {testimonial}
-        </p>
-        <div className="flex justify-between items-center gap-1 mt-3">
-          <div className="flex-1 flex flex-col">
-            <p className="font-medium text-[16px]">@ {name}</p>
-            <p className="mt-1 text-bg-btn text-[12px]">
-              {designation} at <span className="text-[14px]"> {company}</span>
-            </p>
-          </div>
-
-          <img
-            src={image}
-            alt={`feedback_by-${name}`}
-            className="w-10 h-10 rounded-full object-cover"
-          />
+  <motion.div
+    variants={fadeIn("", "spring", index * 0.5, 1)}
+    className=" p-5 rounded-3xl xs:w-[320px] w-full bg-[red] "
+  >
+    <p className="text-bg-white font-black text-[48px]">"</p>
+    <div className="">
+      <p className="h-[11pc] w-auto overflow-y-auto tracking-wider text-[18px]">
+        {testimonial}
+      </p>
+      <div className="flex justify-between items-center gap-1 mt-3">
+        <div className="flex-1 flex flex-col">
+          <p className="font-medium text-[16px]">@ {name}</p>
+          <p className="mt-1 text-bg-btn text-[12px]">
+            {designation} at <span className="text-[14px]"> {company}</span>
+          </p>
         </div>
-      </div>
-    </motion.div>
 
+        <img
+          src={image}
+          alt={`feedback_by-${name}`}
+          className="w-10 h-10 rounded-full object-cover"
+        />
+      </div>
+    </div>
+  </motion.div>
 );
 
 const Testimonies = () => {
@@ -70,15 +70,24 @@ const Testimonies = () => {
         </motion.div>
       </div>
       <Swiper
-        spaceBetween={30}
+        effect={"coverflow"}
+        grabCursor={true}
         centeredSlides={true}
+        slidesPerView={"auto"}
+        coverflowEffect={{
+          rotate: 50,
+          stretch: 0,
+          depth: 100,
+          modifier: 1,
+          slideShadows: true,
+        }}
         autoplay={{
-          delay: 4000,
+          delay: 5000,
           disableOnInteraction: false,
         }}
-        navigation={true}
-        modules={[Autoplay, Navigation]}
-        className={`-mt-20 pb-14 ${styles.paddingX} swiper hero items-center`}
+        pagination={true}
+        modules={[EffectCoverflow, Pagination, Autoplay,]}
+        className={`-mt-20 pb-14 ${styles.paddingX} swiper items-center`}
       >
         {testimonials.map((testimonial, index) => (
           <SwiperSlide>
