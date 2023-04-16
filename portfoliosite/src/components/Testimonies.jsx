@@ -1,13 +1,5 @@
 import React from "react";
-import Tilt from "react-tilt";
 import { motion } from "framer-motion";
-
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Pagination } from "swiper";
-import { Autoplay, Navigation } from "swiper";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
 
 import { styles } from "../styles";
 import { SectionWrapper } from "../hoc";
@@ -32,8 +24,8 @@ const TestimoniesCard = ({
       <p className="h-[11pc] w-auto overflow-y-auto tracking-wider text-[18px]">
         {testimonial}
       </p>
-      <div className="flex justify-between items-center gap-1 mt-3">
-        <div className="flex-1 flex flex-col">
+      <div className="flex items-center justify-between gap-1 mt-3">
+        <div className="flex flex-col flex-1">
           <p className="font-medium text-[16px]">@ {name}</p>
           <p className="mt-1 text-bg-btn text-[12px]">
             {designation} at <span className="text-[14px]"> {company}</span>
@@ -43,7 +35,7 @@ const TestimoniesCard = ({
         <img
           src={image}
           alt={`feedback_by-${name}`}
-          className="w-10 h-10 rounded-full object-cover"
+          className="object-cover w-10 h-10 rounded-full"
         />
       </div>
     </div>
