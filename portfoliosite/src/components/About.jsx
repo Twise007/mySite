@@ -33,6 +33,7 @@ const ServiceCard = ({ index, title, icon, text }) => (
             {title}
           </h3>
           <p className="h-6 w-auto overflow-y-auto">
+            
             {text}
           </p>
         </div>

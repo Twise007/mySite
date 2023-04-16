@@ -117,6 +117,7 @@ const projects = [
     desc: "Built a CRUB app to help users record and manage stock of products, establishing navigation. Used MERN stack, Tailwind CSS, and Redux for state management.",
     title: "Enventory App",
     link: "https://github.com/Twise007/Enventory_app",
+    tech: "React, Express JS, MongoDB, Node JS",
   },
   {
     imageName: lms,
@@ -124,6 +125,7 @@ const projects = [
     desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to a teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Upload of profile picture with cloudinary",
     title: "Learning Management System",
     link: "https://github.com/Twise007/lms",
+    tech: "React, Express JS, MongoDB, Node JS, tailwind",
   },
   {
     imageName: project1,
@@ -131,6 +133,7 @@ const projects = [
     desc: "Developed and hosted a website to showcase my skills and projects with React JS.",
     title: "Portfolio website",
     link: "https://github.com/Twise007/mySite",
+    tech: "React, Tailwind",
   },
   // {imageName: taskManager, visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
   // desc:'A full-stack resource management web app built using MERN stack to enable users track and manage tasks', title:'Task Manager'},
@@ -140,6 +143,7 @@ const projects = [
     link: "https://github.com/Twise007/churchWebsite",
     desc: "Designed and developed a church website with an interactive homepage using React, validated web links and navigation, and optimized screens for mobile",
     title: "Church Website",
+    tech: "React, Tailwind",
   },
   {
     imageName: weather,
@@ -147,6 +151,7 @@ const projects = [
     desc: "Built an app to fetch data and report on current weather status, implementing features for real-time updates using React and Bootstrap",
     title: "Weather App",
     link: "https://github.com/",
+    tech: "React, Css",
   },
   {
     imageName: todo,
@@ -154,6 +159,7 @@ const projects = [
     desc: "Developed a simple web app that allows users to add and delete to-do items; used JS, HTML, and CSS.",
     title: "Todo-App",
     link: "https://github.com/",
+    tech: "React, Bootstrap",
   },
 ];
 

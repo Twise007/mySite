@@ -29,26 +29,14 @@
 }
 
 
-.hash-span {
-  margin-top: -100px;
-  padding-bottom: 100px;
-  display: block;
-}
+
 
 .transCard {
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
 }
 
-.violet-gradient {
-  background: #804dee;
-  background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
-  background: -webkit-linear-gradient(
-    -90deg,
-    #804dee 0%,
-    rgba(60, 51, 80, 0) 100%
-  );
-}
+
 
 .green-pink-gradient {
   background: "#00cea8";
@@ -60,4 +48,3 @@
   pointer-events: none;
   rotate: -90deg;
 }
-

@@ -14,13 +14,6 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
-const navLinks = [
-  { title: "About", id: "about",},
-  { title: "Project", id: "project", },
-  { title: "Testimonies", id: "testimonies",  },
-  { title: "Contact", id: "contact", },
-];
-
 const TestimoniesCard = ({
   index,
   testimonial,
@@ -31,7 +24,8 @@ const TestimoniesCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 1)}
-    className=" p-5 rounded-3xl xs:w-[320px] w-full bg-[red] "
+    className="p-5 rounded-3xl transCard shadow-2xl w-[18pc] "
+    style={{minWidth:"18pc"}}
   >
     <p className="text-bg-white font-black text-[48px]">"</p>
     <div className="">
@@ -69,36 +63,17 @@ const Testimonies = () => {
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
         </motion.div>
       </div>
-      <Swiper
-        effect={"coverflow"}
-        grabCursor={true}
-        centeredSlides={true}
-        slidesPerView={"auto"}
-        coverflowEffect={{
-          rotate: 50,
-          stretch: 0,
-          depth: 100,
-          modifier: 1,
-          slideShadows: true,
-        }}
-        autoplay={{
-          delay: 5000,
-          disableOnInteraction: false,
-        }}
-        pagination={true}
-        modules={[EffectCoverflow, Pagination, Autoplay,]}
-        className={`-mt-20 pb-14 ${styles.paddingX} swiper items-center`}
+      <div
+        className={`-mt-20 pb-2 ${styles.paddingX} mr-6 flex flex-row gap-3 overflow-y-auto`}
       >
         {testimonials.map((testimonial, index) => (
-          <SwiperSlide>
-            <TestimoniesCard
-              key={testimonial.name}
-              index={index}
-              {...testimonial}
-            />
-          </SwiperSlide>
+          <TestimoniesCard
+            key={testimonial.name}
+            index={index}
+            {...testimonial}
+          />
         ))}
-      </Swiper>
+      </div>
     </div>
   );
 };
