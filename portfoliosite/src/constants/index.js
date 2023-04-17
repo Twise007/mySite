@@ -1,6 +1,5 @@
 import {
   sass,
-  adobe,
   hog,
   todo,
   femi,
@@ -101,10 +100,6 @@ const technologies = [
     icon: git,
   },
   {
-    name: "Adobe XD",
-    icon: adobe,
-  },
-  {
     name: "Cisco",
     icon: cisco,
   },
@@ -135,8 +130,6 @@ const projects = [
     link: "https://github.com/Twise007/mySite",
     tech: "React, Tailwind",
   },
-  // {imageName: taskManager, visit:'Visit', link:"https://github.com/Twise007/Task-Manager-MERN-app",
-  // desc:'A full-stack resource management web app built using MERN stack to enable users track and manage tasks', title:'Task Manager'},
   {
     imageName: hog,
     visit: "https://hogchurch.netlify.app/",

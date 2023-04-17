@@ -28,7 +28,7 @@ const ProjectCard = ({ desc, imageName, link, visit, title, tech }) => {
       }
       iconClassName="bg-bg-primary dark:bg-bg-white"
       icon={
-        <div className="justify-center items-center w-full h-full text-bg-white dark:text-bg-primary">
+        <div className="items-center justify-center w-full h-full text-bg-white dark:text-bg-primary">
           <BsGlobe className="text-3xl" />
         </div>
       }
@@ -40,16 +40,16 @@ const ProjectCard = ({ desc, imageName, link, visit, title, tech }) => {
         <img
           src={imageName}
           alt="project_Image"
-          className="absolute inset-0 w-full h-full object-cover rounded-xl hover:scale-125 transition:transform "
+          className="absolute inset-0 object-cover w-full h-full rounded-xl hover:scale-125 transition:transform "
         />
         <div className="absolute inset-0"></div>
 
         <div className="absolute inset-0 flex justify-end m-3">
           <div
             onClick={() => window.open(link, "_blank")}
-            className="bg-black w-10 h-10 rounded-full flex justify-center items-center text-2xl hover:text-3xl"
+            className="flex items-center justify-center w-10 h-10 text-2xl bg-black rounded-full hover:text-3xl"
           >
-            <BsGithub className=" duration-500 text-white" />
+            <BsGithub className="text-white duration-500 " />
           </div>
         </div>
       </div>
