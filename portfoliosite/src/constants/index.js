@@ -36,12 +36,12 @@ const services = [
   {
     title: "Backend Developer",
     icon: backend,
-    text: "I am very efficient and effective in NODE JS, EXPRESS JS, MONDO DB and SANITY in building a stressless technology for the users.",
+    text: "I am very efficient and effective in NODE JS, EXPRESS JS, MONDO DB and SANITY in building a seamless technology for the users.",
   },
   {
     title: "Ui-Ux",
     icon: mobile,
-    text: "Being a full stack engineer the knowledge of UI tools should never be over emphasis. I have some knowledge in ABODE XD and FIGMA.",
+    text: "Being a full stack engineer the knowledge of UI tools can never be over emphasis. I also have some knowledge in ABODE XD and FIGMA.",
   },
   {
     title: "Network Engineer",
@@ -117,7 +117,7 @@ const projects = [
   {
     imageName: lms,
     visit: "https://teecamp.netlify.app/",
-    desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to a teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Upload of profile picture with cloudinary",
+    desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Uploading of profile pictures and store it in the cloudinary",
     title: "Learning Management System",
     link: "https://github.com/Twise007/lms",
     tech: "React, Express JS, MongoDB, Node JS, tailwind",
@@ -175,7 +175,7 @@ const testimonials = [
   },
   {
     testimonial:
-      "Tunde is a hardworking, resilient and passionate person. He is a goal oriented person, He gives his best to the progress of the team. a team player to the core",
+      "Tunde is an hardworking, resilient and a passionate person. He is a goal oriented person, He gives his best to the progress of the team. a team player to the core",
     name: "Isreal",
     designation: "Colleague",
     company: "Nerdy Eye",

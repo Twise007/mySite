@@ -25,17 +25,14 @@ const ServiceCard = ({ index, title, icon, text }) => (
           <img
             src={icon}
             alt="web-development"
-            className="w-16 h-16 object-contain"
+            className="object-contain w-16 h-16"
           />
         </figure>
-        <div className="card-body pt-2">
+        <div className="pt-2 card-body">
           <h3 className="card-title text-bg-btn text-[20px] font-bold items-center text-center justify-center">
             {title}
           </h3>
-          <p className="h-6 w-auto overflow-y-auto">
-            
-            {text}
-          </p>
+          <p className="w-auto h-6 overflow-y-auto">{text}</p>
         </div>
       </div>
     </motion.div>
@@ -56,19 +53,19 @@ const About = () => {
       >
         A MERN stack developer that proffer professional, efficient, and
         effecftive design service for Start-Up and Cooperate companies in
-        maximazing there vision, there mission and there pontentials. Proficient
-        in multiple programming languages, including JavaScript, HTML, CSS, and
-        MERN stack; and strong understanding of web development concepts such as
-        responsive design and cross-browser compatibility. I'm also a productive
-        nerd, resilient and goal oriented person. Tech as always been a passion
-        for me, IOT and AI are my future ambition.
-        <br />I had a significant years of expreince as a Network engineer and
-        being certified by Cisco, web gave me the ability to explore and create
-        my own world. I enjoy making research, solving problems, taking a lead,
-        and watching football or playing football.
+        maximazing their vision and their pontentials. Proficient in multiple
+        programming languages, including JavaScript, HTML, CSS, and MERN stack;
+        and strong understanding of web development concepts such as responsive
+        design and cross-browser compatibility. I'm also a productive nerd,
+        resilient and a goal oriented person. Tech as always been a passion for
+        me, IOT and AI are my future ambitions.
+        <br />I had some significant years of expreince as a Network engineer
+        and being certified by Cisco, web gave me the ability to explore and
+        create my own world. I enjoy making research, solving problems, taking
+        the lead, as well as watching football or playing football.
       </motion.p>
 
-      <div className="mt-10 flex flex-wrap gap-10 items-center justify-center">
+      <div className="flex flex-wrap items-center justify-center gap-10 mt-10">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
