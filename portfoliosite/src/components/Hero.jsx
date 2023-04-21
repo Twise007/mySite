@@ -12,7 +12,7 @@ const Hero = () => {
         <img
           src={profile}
           alt="profile"
-          className="max-w-sm shadow-2xl bg-opacity"
+          className="w-auto w-full max-w-sm bg-auto shadow-2xl bg-opacity w-[100%]"
           style={{ borderRadius: "63% 37% 62% 38% / 34% 31% 69% 66% " }}
         />
         <div

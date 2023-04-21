@@ -71,7 +71,9 @@ const Contact = () => {
         className={`bg-bg-sec rounded-2xl ${styles.padding} min-h-[400px] md:min-h-[420px]`}
       >
         <motion.div variants={textVariant()}>
-          <p className={styles.sectionSubText} style={{ color: "#fff" }}>
+          <p
+            className={`{styles.sectionSubText} text-white`}
+          >
             Get in touch to me
           </p>
           <h3 className={styles.sectionHeadText}>Contact</h3>
@@ -83,7 +85,7 @@ const Contact = () => {
       </div>
       <motion.div
         variants={textVariant()}
-        className="-mt-20 mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl bg-bg-primary dark:bg-bg-white border-[1px] border-bg-btn rounded-2xl "
+        className="-mt-20 mx-2 md:mx-10 hero-content flex-col lg:flex-row-reverse shadow-2xl bg-bg-primary dark:bg-bg-white border-[1px] border-bg-btn rounded-2xl "
       >
         <img
           src={contact}
