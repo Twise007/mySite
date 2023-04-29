@@ -1,4 +1,3 @@
-
 import { BrowserRouter } from "react-router-dom";
 import {
   About,
@@ -12,7 +11,7 @@ import {
   Mode,
 } from "./components";
 import { ToastContainer } from "react-toastify";
-import { videoBg,  } from "../src/assets/index";
+import { videoBg } from "../src/assets/index";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.css";
 
@@ -22,7 +21,7 @@ function App() {
       <ToastContainer />
       <div className="relative z-0 bg-bg-primary dark:bg-bg-white text-bg-white dark:text-bg-primary">
         <Mode />
-        <div className="hero bg-cover bg-no-repeat bg-center">
+        <div className="bg-center bg-no-repeat bg-cover hero">
           <video
             src={`${videoBg}`}
             autoPlay
