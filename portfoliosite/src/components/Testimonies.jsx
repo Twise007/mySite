@@ -16,8 +16,7 @@ const TestimoniesCard = ({
 }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 1)}
-    className="p-5 rounded-3xl transCard shadow-2xl w-[18pc] "
-    style={{minWidth:"18pc"}}
+    className="p-5 rounded-3xl transCard shadow-2xl w-[18pc] min-w-[18pc]"
   >
     <p className="text-bg-white font-black text-[48px]">"</p>
     <div className="">
