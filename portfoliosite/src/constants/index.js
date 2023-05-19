@@ -1,4 +1,5 @@
 import {
+  craves,
   sass,
   hog,
   todo,
@@ -25,6 +26,7 @@ import {
   sanity,
   project1,
   lms,
+  bitscard,
 } from "../assets";
 
 const services = [
@@ -107,6 +109,22 @@ const technologies = [
 
 const projects = [
   {
+    imageName: bitscard,
+    visit: "https://m.bitscard.co",
+    desc: "Built a Fintech app. Used MERN stack, Tailwind CSS, and Redux for state management, I was empolyed as part of the frontend engineers team.",
+    title: "Bitscard",
+    link: "https://github.com/Twise007/Enventory_app",
+    tech: "React and Css",
+  },
+  {
+    imageName: craves,
+    visit: "https://craves.netlify.app/",
+    desc: "An eCommerce CRUB app, A users can check the products, make an order of the product and also make payment of the product. Used MERN stack, Tailwind CSS.",
+    title: "Craves Food",
+    link: "https://github.com/Twise007/crave",
+    tech: "React, Express JS, MongoDB, Node JS",
+  },
+  {
     imageName: enventory,
     visit: "https://enventory-app.vercel.app/",
     desc: "Built a CRUB app to help users record and manage stock of products, establishing navigation. Used MERN stack, Tailwind CSS, and Redux for state management.",
@@ -115,20 +133,20 @@ const projects = [
     tech: "React, Express JS, MongoDB, Node JS",
   },
   {
-    imageName: lms,
-    visit: "https://teecamp.netlify.app/",
-    desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Uploading of profile pictures and store it in the cloudinary",
-    title: "Learning Management System",
-    link: "https://github.com/Twise007/lms",
-    tech: "React, Express JS, MongoDB, Node JS, tailwind",
-  },
-  {
     imageName: project1,
     visit: "",
     desc: "Developed and hosted a website to showcase my skills and projects with React JS.",
     title: "Portfolio website",
     link: "https://github.com/Twise007/mySite",
     tech: "React, Tailwind",
+  },
+  {
+    imageName: lms,
+    visit: "https://teecamp.netlify.app/",
+    desc: "Its a LMS project that allows the full functionality of a CRUD app. 1, The head of school to assign subject and class to teachers. 2, Allows teachers to enter student records and examination scores make full crud functionality on the records. 3, Allows students to check their records and scores. 4, Uploading of profile pictures and store it in the cloudinary",
+    title: "Learning Management System",
+    link: "https://github.com/Twise007/lms",
+    tech: "React, Express JS, MongoDB, Node JS, tailwind",
   },
   {
     imageName: hog,
@@ -145,14 +163,6 @@ const projects = [
     title: "Weather App",
     link: "https://github.com/",
     tech: "React, Css",
-  },
-  {
-    imageName: todo,
-    visit: "https://tee-o-todo.netlify.app/",
-    desc: "Developed a simple web app that allows users to add and delete to-do items; used JS, HTML, and CSS.",
-    title: "Todo-App",
-    link: "https://github.com/",
-    tech: "React, Bootstrap",
   },
 ];
 

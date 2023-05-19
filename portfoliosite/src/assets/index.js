@@ -19,8 +19,8 @@ import myCv from "./myCv.pdf";
 import contact from "./contact.svg";
 import videoBg from "./videoBg.mp4";
 import videoBg2 from "./videoBg2.mp4";
-
-
+import craves from "./craves.png";
+import bitscard from "./bitscard.png";
 
 import css from "./tech/css.png";
 import cisco from "./tech/cisco.png";
@@ -40,6 +40,8 @@ import tailwind from "./tech/tailwind.png";
 import tripguide from "./tripguide.png";
 
 export {
+  bitscard,
+  craves,
   sass,
   adobe,
   lms,
