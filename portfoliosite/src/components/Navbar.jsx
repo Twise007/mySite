@@ -42,10 +42,12 @@ const Navbar = () => {
       className={`${
         styles.paddingX
       } navbar w-full flex items-center py-5 fixed top-0 z-20 ${
-        scrolled ? "bg-bg-primary dark:bg-bg-white" : "bg-transparent dark:bg-bg-white"
+        scrolled
+          ? "bg-bg-primary dark:bg-bg-white"
+          : "bg-transparent dark:bg-bg-white"
       }`}
     >
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="flex items-center justify-between w-full mx-auto max-w-7xl">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -54,14 +56,14 @@ const Navbar = () => {
             window.scrollTo(0, 0);
           }}
         >
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className="object-contain w-9 h-9" />
           <p className="text-[18px] font-bold cursor-pointer flex hover:text-bg-btn">
             TeeTech &nbsp;
-            <span className="sm:block hidden"> | Portfolio</span>
+            <span className="hidden sm:block"> | Portfolio</span>
           </p>
         </Link>
 
-        <ul className="list-none hidden md:flex flex-row gap-10">
+        <ul className="flex-row hidden gap-10 list-none md:flex">
           {navLinks.map((nav) => (
             <li
               key={nav.id}
@@ -77,14 +79,14 @@ const Navbar = () => {
           ))}
         </ul>
 
-        <div className="md:hidden flex flex-1 justify-end items-center">
+        <div className="flex items-center justify-end flex-1 md:hidden">
           <Hamburger toggled={toggle} toggle={setToggle} />
           <div
             className={`${
               !toggle ? "hidden" : "flex"
             } pt-6 absolute top-16 right-0 my-3 min-w-[140px] min-h-screen bg-bg-primary dark:bg-bg-white`}
           >
-            <ul className="list-none flex justify-start flex-1 flex-col gap-4 menu">
+            <ul className="flex flex-col justify-start flex-1 gap-4 list-none menu">
               {navLinks.map((nav) => (
                 <li
                   key={nav.id}
@@ -97,7 +99,7 @@ const Navbar = () => {
                   }}
                 >
                   <a
-                    className="rounded-md duration-300 hover:text-bg-btn"
+                    className="duration-300 rounded-md hover:text-bg-btn"
                     href={`#${nav.id}`}
                   >
                     <span className="text-[26px] text-bg-btn">{nav.icon}</span>

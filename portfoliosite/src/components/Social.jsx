@@ -16,13 +16,12 @@ const datas = [
 const Social = () => {
   return (
     <div className="pt-2">
-      <ul className="list-none flex flex-row gap-2 justify-start items-center h-16">
+      <ul className="flex flex-row items-center justify-start h-16 gap-2 list-none">
         {datas.map((data, index) => (
           <div
             key={index}
             onClick={() => window.open(data.link, "_blank")}
-            className="transCard w-12 h-12 hover:w-14 hover:h-14 rounded-full flex justify-center items-center cursor-pointer
-            text-2xl hover:text-3xl duration-700 text-white hover:text-bg-sec hover:bg-white"
+            className="flex items-center justify-center w-12 h-12 text-2xl text-white duration-700 rounded-full cursor-pointer transCard hover:w-14 hover:h-14 hover:text-3xl hover:text-bg-sec hover:bg-white"
           >
             <li>{data.icon}</li>
           </div>

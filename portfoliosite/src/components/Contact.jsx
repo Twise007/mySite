@@ -60,7 +60,7 @@ const Contact = () => {
         (error) => {
           setLoading(false);
           console.error(error);
-          toast("Ahh, something went wrong. Please try again.");
+          toast("Oh, something went wrong. Please try again.");
         }
       );
   };
